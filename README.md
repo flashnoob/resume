@@ -3,7 +3,7 @@ This the source code for my resume in LaTeX and also the functionality to suppor
 ## Resume
 In order to build my resume as a pdf, run the following:
 ```
-pdflatex make resume
+make resume
 ```
 
 The LaTeX modules for Resume and Cover Letter originated here, I editted them to my liking, but all credit here, I am not experienced in LaTeX:
