@@ -1,181 +1,99 @@
-%% start of file `template.tex'.
+%% start of file 'John-Van-Note-Resume.tex'.
 %% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
-%
+%%
+%% John Van Note
+%% 2016-01-09
+%%
+%% My resume source code
+%%
+
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License version 1.3c,
 % available at http://www.latex-project.org/lppl/.
 
-
-\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+% possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[11pt,a4paper,sans]{moderncv}
 
 % moderncv themes
-\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{black}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
-%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
-%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+% style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvstyle{classic}
+
+% color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvcolor{black}
+
+% to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\renewcommand{\familydefault}{\sfdefault}
+
+% uncomment to suppress automatic page numbering for CVs longer than one page
+\nopagenumbers{}
 
 % character encoding
-\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
-%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+% if you are not using xelatex ou lualatex, replace by the encoding you are using
+\usepackage[utf8]{inputenc}
+
+% if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+%\usepackage{CJKutf8
 
 % adjust the page margins
 \usepackage[scale=0.75]{geometry}
-%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
-%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% if you want to change the width     of the column with the dates
+%\setlength{\hintscolumnwidth}{3cm}
+% for the 'classic' style, if you     want to force the width allocated to your name and avoid line breaks. be careful thou    gh, the length is normally calculated to avoid any overlap with your personal info; u    se this at your own typographical risks...
+%\setlength{\makecvtitlenamewidth}{10cm}
 
 % personal data
 \name{John}{Van Note}
-%\title{Resumé title}                               % optional, remove / comment the line if not wanted
-\address{6210 Belcrest Road, Apt 1438}{Hyattsville, MD}{20782}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
-\phone[mobile]{215.518.0823}                   % optional, remove / comment the line if not wanted
-%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
-%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
-\email{johnlvannote@gmail.com.}                               % optional, remove / comment the line if not wanted
-\homepage{https://github.com/johnvannote}                         % optional, remove / comment the line if not wanted
-%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
-%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
-%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+% optional, remove / comment the line if not wanted
+%\title{Resumé title}
+\address{6210 Belcrest Road, Apt 1438}{Hyattsville, MD}{20782}
+\phone[mobile]{215.518.0823}
+\email{johnlvannote@gmail.com}
+\homepage{https://github.com/JohnVanNote}
 
-% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
-%\makeatletter
-%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
-%\makeatother
-%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
-
-% bibliography with mutiple entries
-%\usepackage{multibib}
-%\newcites{book,misc}{{Books},{Others}}
-%----------------------------------------------------------------------------------
-%            content
-%----------------------------------------------------------------------------------
 \begin{document}
-%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
 
-\section{Education}
-\cventry{2008 to 2013}{BS in Business Administration, Minor in Computer Science}{Drexel University}{Philadelphia, PA}{\textit{3.59 GPA}}{}  % arguments 3 to 6 can be left empty -- argument 6 description left empty
-%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
-
 \section{Experience}
-\cventry{February 2016 to Current}{Application Technologies Engineer}{Corporation Service Company}{Wilmington, DE}{}{%Building and supporting applications\newline{}%
-Responsibilities:%
-\begin{itemize}%
-\item Building and upgrading enterprise applications on both the Windows and Unix operating systems across multiple environments maintaining stability and scailability while adhering to tight-defined schedules.
-\item Supporting various cross-functional applications by resolving server-side issues and making configuration changes necessary for a growing environment.
-  %\begin{itemize}%
-  %\item Sub-achievement (a);
-  %\item Sub-achievement (b), with sub-sub-achievements (don't do this!);
-   % \begin{itemize}
-    %\item Sub-sub-achievement i;
-    %\item Sub-sub-achievement ii;
-    %\item Sub-sub-achievement iii;
-    %\end{itemize}
-  %\%item Sub-achievement (c);
-  %\end{itemize}
-\item Creating and implementing architecture plans to leverage existing technologies to solve new organizational needs.
+\cventry{February 2016 to Current}{Software/Support Engineer}{Corporation Service Company}{Wilmington, DE}{}{
+    Responsibilities:%
+    \begin{itemize}%
+        \item Building and upgrading enterprise applications on both the Windows and Unix operating systems across multiple environments maintaining stability and scailability while adhering to tight-defined schedules.
+        \item Supporting various cross-functional applications by resolving server-side issues and making configuration changes necessary for a growing environment.
+        \item Creating and implementing architecture plans to leverage existing technologies to solve new organizational needs.
+        \item Designed and developed a Groovy application to generate and automated application performance index report on a monthly basis aggregating data from multiple sources.
 \end{itemize}}
 
-\cventry{March 2015 to February 2016}{Technical Application Support Engineer}{Corporation Service Company}{Wilmington, DE}{}{%First level of support dealing with technical customer 
-%.\newline{}%Description line 2}
-Responsibilities:%
-\begin{itemize}%
-\item Improved team productivity by automating a series of reporting tasks using Java/Groovy and Visual Basic For Applications.
-\item Primary support representative for over 10 in-house and third-party applications.
-\item Responded to customer technical application issues in a timely fashion maintained responsibility for issue resolution.
+\cventry{March 2015 to February 2016}{Technical Application Support Engineer}{Corporation Service Company}{Wilmington, DE}{}{
+    Responsibilities:%
+    \begin{itemize}%
+        \item Improved team productivity by automating a series of reporting tasks using Java/Groovy and Visual Basic For Applications.
+        \item Primary support representative for over 10 in-house and third-party applications.
+        \item Responded to customer technical application issues in a timely fashion maintained responsibility for issue resolution.
 \end{itemize}}
 
-\cventry{October 2014 to January 2015}{Technical Support Engineer}{Solve Media, Inc.}{Philadelphia, PA}{}{%Helped customers implement opersource CAPTCHA solutions
-%\newline{}%Description line 2}
-Responsibilities:%
-\begin{itemize}%
-    \item Guided customers through technical integration of open-source CAPTCHA technology in a variety of languages/frameworks including Perl, PHP, Python, Ruby, JSP (Java), and ASP.NET.
-    \item Used JavaScript and VBA to automate a process estimating customer availability across geographic targets reducing, overall estimation time by over 80\% and improving reliability.
-    \item Completed code reviews and quality assurance tasks on existing libraries and plug-ins.
+\cventry{October 2014 to January 2015}{Technical Support Engineer}{Solve Media, Inc.}{Philadelphia, PA}{}{
+    Responsibilities:%
+    \begin{itemize}%
+        \item Guided customers through technical integration of open-source CAPTCHA technology in a variety of languages/frameworks including Perl, PHP, Python, Ruby, JSP (Java), and ASP.NET.
+        \item Used JavaScript and VBA to automate a process estimating customer availability across geographic targets reducing, overall estimation time by over 80\% and improving reliability.
+        \item Completed code reviews and quality assurance tasks on existing libraries and plug-ins.
 \end{itemize}}
 
-%\section{Master thesis}
-%\cvitem{title}{\emph{Title}}
-%\cvitem{supervisors}{Supervisors}
-%\cvitem{description}{Short thesis abstract}
 
-%\section{Languages}
-%\cvitemwithcomment{Language 1}{Skill level}{Comment}
-%\cvitemwithcomment{Language 2}{Skill level}{Comment}
-%\cvitemwithcomment{Language 3}{Skill level}{Comment}
+\section{Education}
+\cventry{2008 to 2013}{BS in Business Administration, Minor in Computer Science}{Drexel University}{Philadelphia, PA}{\textit{3.59 GPA}}{}
 
 \section{Computer skills}
-\cvlistitem{Programming/Scripting Languages: Python, Java/Groovy, C/C++, JavaScript, VBA, BASH, Shell.}
-\cvlistitem{Technologies: GitHub, VirtualBox, IntelliJ, iTerm2, SVN.}%{category 4}{XXX, YYY, ZZZ}
-%\cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
-%\cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+\cvlistitem{Programming/Scripting Languages: Python, Java/Groovy, C/C++, JavaScript, BASH, Shell, VBA, Ruby.}
+\cvlistitem{Technologies: GitHub, VirtualBox, IntelliJ, iTerm2, SVN.}
+\cvlistitem{Servers: Apache HTTP Server, IIS 7, Apache Tomcat, Oracle WebLogic}
+\cvlistitem{Database: Oracle PL/SQL}
 
 \section{Honors}
 \cvlistitem{Eight-time Drexel Univeristy Dean’s List recipient}
 \cvlistitem{A.J. Drexel Scholarship recipient, 2008 to 2013}
 
-%\section{Interests}
-%\cvitem{OpenSource}{}
-%\cvitem{hobby 2}{Description}
-%\cvitem{hobby 3}{Description}
-
-%\section{Extra 1}
-%cvlistitem{Item 1}
-%\cvlistitem{Item 2}
-%\cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
-
-%\section{Extra 2}
-%\cvlistdoubleitem{Item 1}{Item 4}
-%\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
-%\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
-
-%\section{References}
-%begin{cvcolumns}
- % \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
-%  \cvcolumn{Category 2}{Amongst others:\begin{itemize}%\item Person 1, and\item Person 2\end{itemize}(more upon request)}
- % \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
-%\end{cvcolumns}
-
-% Publications from a BibTeX file without multibib
-%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
-%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
-%\nocite{*}
-%\bibliographystyle{plain}
-%\bibliography{publications}                        % 'publications' is the name of a BibTeX file
-
-% Publications from a BibTeX file using the multibib package
-%\section{Publications}
-%\nocitebook{book1,book2}
-%\bibliographystylebook{plain}
-%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
-%\nocitemisc{misc1,misc2,misc3}
-%\bibliographystylemisc{plain}
-%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
-
-\clearpage
-%-----       letter       ---------------------------------------------------------
-% recipient data
-%\recipient{Company Recruitment team}{Company, Inc.\
-%\date{January 01, 1984}
-%\opening{Dear Sir or Madam,}
-%\closing{Yours faithfully,}
-%\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
-%\makelettertitle
-
-%Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
-
-%Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
-
-%Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
-
-%Albert Einstein discovered that $e=mc^2$ in 1905.
-
-%\[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
-
-%\makeletterclosing
-
-%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
 \end{document}
-
-
-%% end of file `template.tex'.
+%% end of file 'John-Van-Note-Resume.tex'.
