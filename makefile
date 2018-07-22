@@ -9,12 +9,12 @@
 
 # variables
 me=John-Van-Note
-resume=$(me)-Resume
-letter=$(me)-Cover-Letter
+resume_doc=$(me)-Resume
+letter_doc=$(me)-Cover-Letter
 build=pdflatex
 
-buildresume :
-	$(build) $(resume).tex
+resume :
+	$(build) $(resume_doc).tex
 
 view : buildresume
-	open $(resume).pdf
+	open $(resume_doc).pdf
