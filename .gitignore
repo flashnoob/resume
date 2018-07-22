@@ -1,6 +1,7 @@
 ## Ignore directory for Debugging
 ignore/
 *.swp
+.idea
 
 # Created by https://www.gitignore.io/api/latex
 
