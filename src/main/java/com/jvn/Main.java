@@ -22,7 +22,8 @@ public class Main {
         .website("https://github.com/JohnVanNote").build();
     System.out.println(personal);
 
-    PersonalSection personalSection = new PersonalSection();
+    PersonalSection personalSection = new PersonalSection(personal);
+    System.out.println(personalSection);
 
     Resume resume = new Resume();
 
