@@ -2,7 +2,9 @@ package com.jvn;
 
 import com.google.common.collect.ImmutableList;
 import com.jvn.resume.Resume;
+import com.jvn.resume.section.ExperienceSection;
 import com.jvn.resume.section.PersonalSection;
+import com.jvn.util.DateRange;
 import com.jvn.util.SingleDateRange;
 import java.time.LocalDate;
 import java.time.Month;
@@ -42,6 +44,24 @@ public class Main {
         .build();
 
     System.out.println(sila);
+
+    Experience csc = new JobExperience.JobExperienceBuilder()
+        .title("Software Support Engineer")
+        .tenure(new DateRange(LocalDate.of(2017, Month.FEBRUARY, 1), LocalDate.of(2018, Month.MARCH, 1)))
+        .company("Corporation Service Company")
+        .companyAddress(new Address.AddressBuilder().city("Wilmington").state("DE").build())
+        .technologyUsed(ImmutableList.of("Java", "Groovy"))
+        .highlights(ImmutableList.of(
+            "Designed and developed a Groovy-based application, which automated a previously manually-compiled\n monthly application performance index. This aggregated data from multiple reporting tools leveraging the Splunk SDK for Java and reading from an Oracle 11g database backend.",
+            "Engineered and supported the implementation of enterprise ETL and Business Intelligence Reporting tools across four environments, spanning more than fourteen application servers. Participated in planning, configuration, and troubleshooting of all server related issues."
+        ))
+        .build();
+
+    System.out.println(csc);
+
+    ExperienceSection experienceSection = new ExperienceSection(ImmutableList.of(sila, csc));
+
+    System.out.println(experienceSection);
 
     Resume resume = new Resume();
 

@@ -1,5 +1,5 @@
-package com.jvn.resume;
+package com.jvn.resume.section;
 
-public class EducationSection {
+public class EducationSection implements Section {
 
 }
