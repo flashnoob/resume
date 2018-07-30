@@ -1,0 +1,86 @@
+<Resume>
+  <personalSection>
+    <personal>
+      <firstName>John</firstName>
+      <lastName>Van Note</lastName>
+      <address>
+        <street>6210 Belcrest Road</street>
+        <additionalStreet>Apt. 1438</additionalStreet>
+        <city>Hyattsville</city>
+        <state>MD</state>
+        <zip>20782</zip>
+      </address>
+      <phoneNumber>215.518.0823</phoneNumber>
+      <email>johnlvannote@protonmail.com</email>
+      <website>https://github.com/JohnVanNote</website>
+    </personal>
+  </personalSection>
+  <experienceSection>
+    <experiences>
+      <experiences>
+        <title>Software Engineer</title>
+        <tenure><startDate><year>2018</year><month>MARCH</month></startDate><endDate/></tenure>
+        <company>Sila Solutions Group</company>
+        <companyAddress>
+          <street/>
+          <additionalStreet/>
+          <city>Arlington</city>
+          <state>VA</state>
+          <zip/>
+        </companyAddress>
+        <technologyUsed>
+          <technologyUsed>Java</technologyUsed>
+          <technologyUsed>Apache Tomcat 1.7</technologyUsed>
+        </technologyUsed>
+        <highlights>
+          <highlights>Installed and implemented SailPoint’s IdentityIQ and IdentityNow on client sites with custom integrations and configuration management.
+          </highlights>
+          <highlights>Developed a custom integration between IdentityIQ and an external ticketing service to perform user actions (account creation, account removal, access requests) for external systems.
+          </highlights>
+        </highlights>
+      </experiences>
+    </experiences>
+  </experienceSection>
+      <!--
+      <experiences>
+        <title>Software Support Engineer</title>
+        <tenure>
+          <startDate>
+            <year><value>2016</value></year><month>FEBRUARY</month>
+          </startDate>
+          <endDate>
+            <year><value>2017</value></year><month>MARCH</month>
+          </endDate>
+        </tenure>
+        <company>Corporation Service Company</company>
+        <companyAddress>
+          <street/>
+          <additionalStreet/>
+          <city>Wilmington</city>
+          <state>DE</state>
+          <zip/>
+        </companyAddress>
+        <technologyUsed>
+          <technologyUsed>Java</technologyUsed>
+          <technologyUsed>Groovy</technologyUsed>
+        </technologyUsed>
+        <highlights>
+          <highlights>Designed and developed a Groovy-based application, which automated a
+            previously manually-compiled
+            monthly application performance index. This aggregated data from multiple reporting
+            tools leveraging the Splunk SDK for Java and reading from an Oracle 11g database
+            backend.
+          </highlights>
+          <highlights>Engineered and supported the implementation of enterprise ETL and Business
+            Intelligence Reporting tools across four environments, spanning more than fourteen
+            application servers. Participated in planning, configuration, and troubleshooting of
+            all server related issues.
+          </highlights>
+        </highlights>
+      </experiences>
+    </experiences>
+  </experienceSection>
+  <educationSection/>
+  <technicalSection/>
+  -->
+</Resume>

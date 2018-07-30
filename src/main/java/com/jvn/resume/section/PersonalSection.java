@@ -7,6 +7,9 @@ public class PersonalSection implements Section {
 
   private Personal personal;
 
+  public PersonalSection() {
+  }
+
   public PersonalSection(Personal personal) {
     this.setPersonal(personal);
   }

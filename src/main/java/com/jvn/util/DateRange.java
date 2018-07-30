@@ -6,31 +6,31 @@ import java.util.Objects;
 
 public class DateRange {
 
-  private LocalDate startDate;
-  private LocalDate endDate;
+  private SimpleDate startDate;
+  private SimpleDate endDate;
 
   public DateRange() {
   }
 
-  public DateRange(LocalDate startDate, LocalDate endDate) {
+  public DateRange(SimpleDate startDate, SimpleDate endDate) {
     this.setStartDate(startDate);
     this.setEndDate(endDate);
   }
 
-  public LocalDate getStartDate() {
+  public SimpleDate getStartDate() {
     return startDate;
   }
 
-  public void setStartDate(LocalDate startDate) {
+  public void setStartDate(SimpleDate startDate) {
     this.startDate = Objects.requireNonNull(startDate, "startDate cannot be null");
   }
 
-  public LocalDate getEndDate() {
+  public SimpleDate getEndDate() {
     return endDate;
   }
 
-  public void setEndDate(LocalDate endDate) {
-    this.endDate = Objects.requireNonNull(endDate, "endDate cannot be null");
+  public void setEndDate(SimpleDate endDate) {
+    this.endDate = endDate;
   }
 
   @Override

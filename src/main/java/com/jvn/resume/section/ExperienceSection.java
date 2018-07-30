@@ -8,6 +8,9 @@ public class ExperienceSection extends AbstractTitledSection {
 
   private List<Experience> experiences;
 
+  public ExperienceSection() {
+  }
+
   public ExperienceSection(List<Experience> experiences) {
     this.setExperiences(experiences);
   }

@@ -4,45 +4,63 @@ import com.google.common.base.MoreObjects;
 
 public class Personal {
 
-  private final String firstName;
-  private final String lastName;
-  private final Address address;
-  private final String phoneNumber;
-  private final String email;
-  private final String website;
+  private String firstName;
+  private String lastName;
+  private Address address;
+  private String phoneNumber;
+  private String email;
+  private String website;
 
-  private Personal(PersonalBuilder builder) {
-    this.firstName = builder.firstName;
-    this.lastName = builder.lastName;
-    this.address = builder.address;
-    this.phoneNumber = builder.phoneNumber;
-    this.email = builder.email;
-    this.website = builder.website;
+  public Personal() {
+    super();
   }
 
   public String getFirstName() {
     return firstName;
   }
 
+  public void setFirstName(String firstName) {
+    this.firstName = firstName;
+  }
+
   public String getLastName() {
     return lastName;
+  }
+
+  public void setLastName(String lastName) {
+    this.lastName = lastName;
   }
 
   public Address getAddress() {
     return address;
   }
 
+  public void setAddress(Address address) {
+    this.address = address;
+  }
+
   public String getPhoneNumber() {
     return phoneNumber;
+  }
+
+  public void setPhoneNumber(String phoneNumber) {
+    this.phoneNumber = phoneNumber;
   }
 
   public String getEmail() {
     return email;
   }
 
+  public void setEmail(String email) {
+    this.email = email;
+  }
 
   public String getWebsite() {
     return website;
+  }
+
+  public void setWebsite(String website) {
+    this.website = website;
   }
 
   @Override
@@ -57,44 +75,4 @@ public class Personal {
         .omitNullValues()
         .toString();
   }
-
-  public static class PersonalBuilder {
-    private String firstName;
-    private String lastName;
-    private Address address;
-    private String phoneNumber;
-    private String email;
-    private String website;
-
-    public PersonalBuilder(String firstName, String lastName) {
-      this.firstName = firstName;
-      this.lastName = lastName;
-    }
-
-    public PersonalBuilder address(Address address) {
-      this.address = address;
-      return this;
-    }
-
-    public PersonalBuilder phoneNumber(String phoneNumber) {
-      this.phoneNumber = phoneNumber;
-      return this;
-    }
-
-    public PersonalBuilder email(String email) {
-      this.email = email;
-      return this;
-    }
-
-    public PersonalBuilder website(String website) {
-      this.website = website;
-      return this;
-    }
-
-    public Personal build() {
-      return new Personal(this);
-    }
-
-  }
-
 }
