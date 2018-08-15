@@ -19,7 +19,13 @@
     <experiences>
       <experiences>
         <title>Software Engineer</title>
-        <tenure><startDate><year>2018</year><month>MARCH</month></startDate><endDate/></tenure>
+        <tenure>
+          <startDate>
+            <year>2018</year>
+            <month>MARCH</month>
+          </startDate>
+          <endDate/>
+        </tenure>
         <company>Sila Solutions Group</company>
         <companyAddress>
           <street/>
@@ -50,7 +56,16 @@
       </experiences>
       <experiences>
         <title>Software Support Engineer</title>
-        <tenure><startDate><year>2016</year><month>FEBRUARY</month></startDate><endDate><year>2017</year><month>MARCH</month></endDate></tenure>
+        <tenure>
+          <startDate>
+            <year>2016</year>
+            <month>FEBRUARY</month>
+          </startDate>
+          <endDate>
+            <year>2017</year>
+            <month>MARCH</month>
+          </endDate>
+        </tenure>
         <company>Corporation Service Company</company>
         <companyAddress>
           <street/>
@@ -78,9 +93,18 @@
           <highlights>Authored a variety of BASH scripts to remediate Unix server issues.</highlights>
         </highlights>
       </experiences>
-          <experiences>
+      <experiences>
         <title>Technical Application Support Engineer</title>
-        <tenure><startDate><year>2015</year><month>MARCH</month></startDate><endDate><year>2016</year><month>FEBRUARY</month></endDate></tenure>
+        <tenure>
+          <startDate>
+            <year>2015</year>
+            <month>MARCH</month>
+          </startDate>
+          <endDate>
+            <year>2016</year>
+            <month>FEBRUARY</month>
+          </endDate>
+        </tenure>
         <company>Corporation Service Company</company>
         <companyAddress>
           <street/>
@@ -108,7 +132,16 @@
       </experiences>
       <experiences>
         <title>Technical Support Engineer</title>
-        <tenure><startDate><year>2014</year><month>OCTOBER</month></startDate><endDate><year>2015</year><month>JANUARY</month></endDate></tenure>
+        <tenure>
+          <startDate>
+            <year>2014</year>
+            <month>OCTOBER</month>
+          </startDate>
+          <endDate>
+            <year>2015</year>
+            <month>JANUARY</month>
+          </endDate>
+        </tenure>
         <company>Solve Media, Inc.</company>
         <companyAddress>
           <street/>
@@ -136,4 +169,77 @@
       </experiences>
     </experiences>
   </experienceSection>
+  <educationSection>
+    <schools>
+      <schools>
+        <degree>Bachelor of Science in Business Administration, Minor in Computer Science</degree>
+        <name>Drexel University</name>
+        <address>
+          <city>Philadelphia</city>
+          <state>PA</state>
+        </address>
+        <gpa>3.59</gpa>
+        <tenure>
+          <startDate>
+            <year>2008</year>
+            <month>SEPTEMBER</month>
+          </startDate>
+          <endDate>
+            <year>2013</year>
+            <month>JUNE</month>
+          </endDate>
+        </tenure>
+      </schools>
+    </schools>
+  </educationSection>
+  <technicalSection>
+    <tools>
+      <tools>
+        <label>Programming/Scripting Languages</label>
+        <toolSet>
+          <toolSet>Java/Groovy</toolSet>
+          <toolSet>Python</toolSet>
+          <toolSet>C/C++</toolSet>
+          <toolSet>BASH</toolSet>
+          <toolSet>VBA</toolSet>
+          <toolSet>JavaScript</toolSet>
+          <toolSet>PowerShell</toolSet>
+        </toolSet>
+      </tools>
+      <tools>
+        <label>Development Tools</label>
+        <toolSet>
+          <toolSet>Git</toolSet>
+          <toolSet>SVN</toolSet>
+          <toolSet>Vagrant</toolSet>
+          <toolSet>IntelliJ/Eclipse</toolSet>
+          <toolSet>iTerm 2</toolSet>
+        </toolSet>
+      </tools>
+      <tools>
+        <label>Web Servers</label>
+        <toolSet>
+          <toolSet>Apache HTTP Server</toolSet>
+          <toolSet>IIS</toolSet>
+          <toolSet>Apache Tomcat</toolSet>
+          <toolSet>Oracle Weblogic</toolSet>
+        </toolSet>
+      </tools>
+      <tools>
+        <label>Operating Systems</label>
+        <toolSet>
+          <toolSet>RedHat Enterprise Linux</toolSet>
+          <toolSet>OSX</toolSet>
+          <toolSet>Windows</toolSet>
+        </toolSet>
+      </tools>
+       <tools>
+        <label>Databases</label>
+        <toolSet>
+          <toolSet>Oracle</toolSet>
+          <toolSet>MySQL</toolSet>
+        </toolSet>
+      </tools>
+    </tools>
+  </technicalSection>
 </Resume>
