@@ -1,6 +1,7 @@
 package com.jvn.util;
 
 import java.time.Month;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
 public class SimpleDate {
@@ -30,6 +31,10 @@ public class SimpleDate {
 
   public void setMonth(Month month) {
     this.month = month;
+  }
+
+  public String getReadable() {
+    return String.format("%s. %d", StringUtils.left(StringUtils.upperCase(month.toString()), 3), year);
   }
 
   @Override
