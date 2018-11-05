@@ -1,31 +1,67 @@
 package com.jvn.resume.section;
 
-import com.google.common.base.MoreObjects;
-import com.jvn.Personal;
+import com.jvn.Address;
+import org.apache.commons.lang3.builder.ToStringBuilder;
 
-public class PersonalSection implements Section {
+public class PersonalSection extends Section {
 
-  private Personal personal;
+  private String firstName;
+  private String lastName;
+  private Address address;
+  private String phoneNumber;
+  private String email;
+  private String website;
 
   public PersonalSection() {
+    super();
   }
 
-  public PersonalSection(Personal personal) {
-    this.setPersonal(personal);
+  public String getFirstName() {
+    return firstName;
   }
 
-  public Personal getPersonal() {
-    return personal;
+  public void setFirstName(String firstName) {
+    this.firstName = firstName;
   }
 
-  public void setPersonal(Personal personal) {
-    this.personal = personal;
+  public String getLastName() {
+    return lastName;
   }
 
-  @Override
-  public String toString() {
-    return MoreObjects.toStringHelper(this)
-        .add("personal", personal)
-        .toString();
+  public void setLastName(String lastName) {
+    this.lastName = lastName;
   }
+
+  public Address getAddress() {
+    return address;
+  }
+
+  public void setAddress(Address address) {
+    this.address = address;
+  }
+
+  public String getPhoneNumber() {
+    return phoneNumber;
+  }
+
+  public void setPhoneNumber(String phoneNumber) {
+    this.phoneNumber = phoneNumber;
+  }
+
+  public String getEmail() {
+    return email;
+  }
+
+  public void setEmail(String email) {
+    this.email = email;
+  }
+
+  public String getWebsite() {
+    return website;
+  }
+
+  public void setWebsite(String website) {
+    this.website = website;
+  }
+
 }

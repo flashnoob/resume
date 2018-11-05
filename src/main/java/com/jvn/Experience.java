@@ -1,15 +1,15 @@
 package com.jvn;
 
-import com.google.common.base.MoreObjects;
 import com.jvn.util.DateRange;
 import java.util.List;
+import org.apache.commons.lang3.builder.ToStringBuilder;
 
 public class Experience {
 
   private String title;
   private DateRange tenure;
   private String company;
-  private Address companyAddress;
+  private Address address;
   private List<String> technologyUsed;
   private List<String> highlights;
 
@@ -40,12 +40,12 @@ public class Experience {
     this.company = company;
   }
 
-  public Address getCompanyAddress() {
-    return companyAddress;
+  public Address getAddress() {
+    return address;
   }
 
-  public void setCompanyAddress(Address companyAddress) {
-    this.companyAddress = companyAddress;
+  public void setAddress(Address address) {
+    this.address = address;
   }
 
   public List<String> getTechnologyUsed() {
@@ -66,15 +66,6 @@ public class Experience {
 
   @Override
   public String toString() {
-    return MoreObjects.toStringHelper(this)
-        .add("title", title)
-        .add("tenure", tenure)
-        .add("company", company)
-        .add("companyAddress", companyAddress)
-        .add("technologyUsed", technologyUsed)
-        .add("highlights", highlights)
-        .omitNullValues()
-        .toString();
+    return ToStringBuilder.reflectionToString(this);
   }
-
 }

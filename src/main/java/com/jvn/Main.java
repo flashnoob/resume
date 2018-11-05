@@ -1,40 +1,25 @@
 package com.jvn;
 
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
+import com.jvn.resume.LatexResume;
 import com.jvn.resume.Resume;
-import com.jvn.util.DateRange;
-import com.jvn.util.SimpleDate;
-import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.time.Month;
-import java.util.stream.Stream;
+import com.jvn.resume.printer.Printer;
+import com.jvn.resume.printer.VelocityPrinter;
+import com.jvn.util.FileUtil;
 
 public class Main {
 
   public static void main(String[] args) throws Exception {
-    XmlMapper xmlMapper1 = new XmlMapper();
-    SimpleDate date = new SimpleDate(2018, Month.MARCH);
-    Experience experience = new Experience();
-    experience.setTenure(new DateRange(date, null));
-    System.out.println(xmlMapper1.writeValueAsString(experience));
+    FileUtil xml = new FileUtil("data/JohnVanNoteResume.xml");
 
+    XmlMapper mapper = new XmlMapper();
+    Resume resume = mapper.readValue(xml.readFileContents(), LatexResume.class);
+    System.out.println(resume);
 
-    XmlMapper xmlMapper = new XmlMapper();
-    Resume deserializedResume = xmlMapper.readValue(readFileContents("data/JohnVanNoteResume.xml"), Resume.class);
-    System.out.println(deserializedResume);
-
-  }
-
-  private static String readFileContents(String filePath) throws IOException {
-    StringBuilder contents = new StringBuilder();
-
-    try (Stream<String> stream = Files.lines(Paths.get(filePath), StandardCharsets.UTF_8)) {
-      stream.forEach(s -> contents.append(s).append("\n"));
-    }
-
-    return contents.toString();
+    FileUtil template = new FileUtil("templates/resume.vm");
+    FileUtil out = new FileUtil("out/JohnVanNote.tex");
+    Printer printer = new VelocityPrinter(template, out);
+    printer.printResume(resume);
   }
 
 }

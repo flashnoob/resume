@@ -1,30 +1,22 @@
 package com.jvn.resume.section;
 
-import com.google.common.base.MoreObjects;
-import com.jvn.Tool;
+import com.jvn.ToolSet;
 import java.util.List;
 
 public class TechnicalSection extends AbstractTitledSection {
 
-  private List<Tool> tools;
+  private List<ToolSet> toolSet;
 
-  public List<Tool> getTools() {
-    return tools;
+  public List<ToolSet> getToolSet() {
+    return toolSet;
   }
 
-  public void setTools(List<Tool> tools) {
-    this.tools = tools;
-  }
-
-  @Override
-  public String toString() {
-    return MoreObjects.toStringHelper(this)
-        .add("tools", tools)
-        .toString();
+  public void setToolSet(List<ToolSet> toolSet) {
+    this.toolSet = toolSet;
   }
 
   @Override
-  public String valueOfTitle() {
+  public String getTitle() {
     return "Technical Tools";
   }
 }

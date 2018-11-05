@@ -1,6 +1,7 @@
 package com.jvn;
 
 import com.google.common.base.MoreObjects;
+import org.apache.commons.lang3.builder.ToStringBuilder;
 
 public class Personal {
 
@@ -65,14 +66,6 @@ public class Personal {
 
   @Override
   public String toString() {
-    return MoreObjects.toStringHelper(this)
-        .add("firstName", firstName)
-        .add("lastName", lastName)
-        .add("address", address)
-        .add("phoneNumber", phoneNumber)
-        .add("email", email)
-        .add("website", website)
-        .omitNullValues()
-        .toString();
+    return ToStringBuilder.reflectionToString(this);
   }
 }

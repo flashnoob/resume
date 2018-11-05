@@ -1,6 +1,5 @@
 package com.jvn.resume.section;
 
-import com.google.common.base.MoreObjects;
 import com.jvn.Education;
 import java.util.List;
 
@@ -16,7 +15,7 @@ public class EducationSection extends AbstractTitledSection {
   }
 
   @Override
-  public String valueOfTitle() {
+  public String getTitle() {
     return "Education";
   }
 
@@ -28,10 +27,4 @@ public class EducationSection extends AbstractTitledSection {
     this.schools = schools;
   }
 
-  @Override
-  public String toString() {
-    return MoreObjects.toStringHelper(this)
-        .add("schools", schools)
-        .toString();
-  }
 }

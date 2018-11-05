@@ -1,13 +1,12 @@
 package com.jvn.resume.printer;
 
 import com.jvn.resume.Resume;
-import java.io.File;
 import java.io.IOException;
 import java.io.Writer;
 
-public class SimplePrinter extends Printer {
+public class SimplePrinter implements Printer {
 
-  private Appendable out;
+  protected Appendable out;
 
   public SimplePrinter(Appendable out) {
     this.setOut(out);
@@ -26,7 +25,6 @@ public class SimplePrinter extends Printer {
     this.out.append(resume.toString());
   }
 
-  @Override
   public void close() throws IOException {
     if (out instanceof Writer)
       ((Writer) out).close();

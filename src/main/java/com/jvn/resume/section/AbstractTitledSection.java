@@ -1,7 +1,7 @@
 package com.jvn.resume.section;
 
-public abstract class AbstractTitledSection implements Section {
+public abstract class AbstractTitledSection extends Section {
 
-  public abstract String valueOfTitle();
+  public abstract String getTitle();
 
 }

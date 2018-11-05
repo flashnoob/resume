@@ -1,8 +1,7 @@
 package com.jvn.util;
 
-import com.google.common.base.MoreObjects;
-import java.time.LocalDate;
 import java.util.Objects;
+import org.apache.commons.lang3.builder.ToStringBuilder;
 
 public class DateRange {
 
@@ -35,10 +34,7 @@ public class DateRange {
 
   @Override
   public String toString() {
-    return MoreObjects.toStringHelper(this)
-        .add("startDate", startDate)
-        .add("endDate", endDate)
-        .omitNullValues()
-        .toString();
+    return ToStringBuilder.reflectionToString(this);
+
   }
 }

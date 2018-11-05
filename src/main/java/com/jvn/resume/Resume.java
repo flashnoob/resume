@@ -1,10 +1,10 @@
 package com.jvn.resume;
 
-import com.google.common.base.MoreObjects;
 import com.jvn.resume.section.EducationSection;
 import com.jvn.resume.section.ExperienceSection;
 import com.jvn.resume.section.PersonalSection;
 import com.jvn.resume.section.TechnicalSection;
+import org.apache.commons.lang3.builder.ToStringBuilder;
 
 public class Resume {
 
@@ -47,11 +47,7 @@ public class Resume {
 
   @Override
   public String toString() {
-    return MoreObjects.toStringHelper(this)
-        .add("personalSection", personalSection)
-        .add("experiencesSection", experienceSection)
-        .add("educationSection", educationSection)
-        .add("technicalSection", technicalSection)
-        .toString();
+    return ToStringBuilder.reflectionToString(this);
   }
+
 }

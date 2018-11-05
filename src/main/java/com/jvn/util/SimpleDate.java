@@ -1,7 +1,7 @@
 package com.jvn.util;
 
-import com.google.common.base.MoreObjects;
 import java.time.Month;
+import org.apache.commons.lang3.builder.ToStringBuilder;
 
 public class SimpleDate {
 
@@ -34,9 +34,7 @@ public class SimpleDate {
 
   @Override
   public String toString() {
-    return MoreObjects.toStringHelper(this)
-        .add("year", year)
-        .add("month", month)
-        .toString();
+    return ToStringBuilder.reflectionToString(this);
   }
+
 }

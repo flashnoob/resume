@@ -15,7 +15,7 @@ public class ExperienceSection extends AbstractTitledSection {
     this.setExperiences(experiences);
   }
 
-  public String valueOfTitle() {
+  public String getTitle() {
     return "Experience";
   }
 

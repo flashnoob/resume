@@ -1,6 +1,6 @@
 package com.jvn;
 
-import com.google.common.base.MoreObjects;
+import org.apache.commons.lang3.builder.ToStringBuilder;
 
 public class Address {
 
@@ -55,14 +55,7 @@ public class Address {
 
   @Override
   public String toString() {
-    return MoreObjects.toStringHelper(this)
-        .add("street", street)
-        .add("additionalStreet", additionalStreet)
-        .add("city", city)
-        .add("state", state)
-        .add("zip", zip)
-        .omitNullValues()
-        .toString();
+    return ToStringBuilder.reflectionToString(this);
   }
 
 }

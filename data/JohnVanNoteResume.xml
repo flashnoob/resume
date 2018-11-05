@@ -1,19 +1,22 @@
 <Resume>
+  <theme>CLASSIC</theme>
+  <fontSize>TEN</fontSize>
+  <fontFamily>SANS</fontFamily>
+  <paperSize>A4</paperSize>
+  <color>BLACK</color>
   <personalSection>
-    <personal>
-      <firstName>John</firstName>
-      <lastName>Van Note</lastName>
-      <address>
-        <street>6210 Belcrest Road</street>
-        <additionalStreet>Apt. 1438</additionalStreet>
-        <city>Hyattsville</city>
-        <state>MD</state>
-        <zip>20782</zip>
-      </address>
-      <phoneNumber>215.518.0823</phoneNumber>
-      <email>johnlvannote@protonmail.com</email>
-      <website>https://github.com/JohnVanNote</website>
-    </personal>
+    <firstName>John</firstName>
+    <lastName>Van Note</lastName>
+    <address>
+      <street>6210 Belcrest Road</street>
+      <additionalStreet>Apt. 1438</additionalStreet>
+      <city>Hyattsville</city>
+      <state>MD</state>
+      <zip>20782</zip>
+    </address>
+    <phoneNumber>215.518.0823</phoneNumber>
+    <email>johnlvannote@protonmail.com</email>
+    <website>https://github.com/JohnVanNote</website>
   </personalSection>
   <experienceSection>
     <experiences>
@@ -27,13 +30,13 @@
           <endDate/>
         </tenure>
         <company>Sila Solutions Group</company>
-        <companyAddress>
+        <address>
           <street/>
           <additionalStreet/>
           <city>Arlington</city>
           <state>VA</state>
           <zip/>
-        </companyAddress>
+        </address>
         <technologyUsed>
           <technologyUsed>Java</technologyUsed>
           <technologyUsed>Apache Tomcat 1.7</technologyUsed>
@@ -67,13 +70,13 @@
           </endDate>
         </tenure>
         <company>Corporation Service Company</company>
-        <companyAddress>
+        <address>
           <street/>
           <additionalStreet/>
           <city>Wilmington</city>
           <state>DE</state>
           <zip/>
-        </companyAddress>
+        </address>
         <technologyUsed>
           <technologyUsed>Java/Groovy</technologyUsed>
           <technologyUsed>Python</technologyUsed>
@@ -106,13 +109,13 @@
           </endDate>
         </tenure>
         <company>Corporation Service Company</company>
-        <companyAddress>
+        <address>
           <street/>
           <additionalStreet/>
           <city>Wilmington</city>
           <state>DE</state>
           <zip/>
-        </companyAddress>
+        </address>
         <technologyUsed>
           <technologyUsed>Groovy</technologyUsed>
           <technologyUsed>VBA</technologyUsed>
@@ -143,13 +146,13 @@
           </endDate>
         </tenure>
         <company>Solve Media, Inc.</company>
-        <companyAddress>
+        <address>
           <street/>
           <additionalStreet/>
           <city>Philadelphia</city>
           <state>PA</state>
           <zip/>
-        </companyAddress>
+        </address>
         <technologyUsed>
           <technologyUsed>JavaScript</technologyUsed>
           <technologyUsed>VBA</technologyUsed>
@@ -193,53 +196,53 @@
     </schools>
   </educationSection>
   <technicalSection>
-    <tools>
+    <toolSet>
       <tools>
         <label>Programming/Scripting Languages</label>
-        <toolSet>
-          <toolSet>Java/Groovy</toolSet>
-          <toolSet>Python</toolSet>
-          <toolSet>C/C++</toolSet>
-          <toolSet>BASH</toolSet>
-          <toolSet>VBA</toolSet>
-          <toolSet>JavaScript</toolSet>
-          <toolSet>PowerShell</toolSet>
-        </toolSet>
+        <tools>
+          <tools>Java/Groovy</tools>
+          <tools>Python</tools>
+          <tools>C/C++</tools>
+          <tools>BASH</tools>
+          <tools>VBA</tools>
+          <tools>JavaScript</tools>
+          <tools>PowerShell</tools>
+        </tools>
       </tools>
       <tools>
         <label>Development Tools</label>
-        <toolSet>
-          <toolSet>Git</toolSet>
-          <toolSet>SVN</toolSet>
-          <toolSet>Vagrant</toolSet>
-          <toolSet>IntelliJ/Eclipse</toolSet>
-          <toolSet>iTerm 2</toolSet>
-        </toolSet>
+        <tools>
+          <tools>Git</tools>
+          <tools>SVN</tools>
+          <tools>Vagrant</tools>
+          <tools>IntelliJ/Eclipse</tools>
+          <tools>iTerm 2</tools>
+        </tools>
       </tools>
       <tools>
         <label>Web Servers</label>
-        <toolSet>
-          <toolSet>Apache HTTP Server</toolSet>
-          <toolSet>IIS</toolSet>
-          <toolSet>Apache Tomcat</toolSet>
-          <toolSet>Oracle Weblogic</toolSet>
-        </toolSet>
+        <tools>
+          <tools>Apache HTTP Server</tools>
+          <tools>IIS</tools>
+          <tools>Apache Tomcat</tools>
+          <tools>Oracle Weblogic</tools>
+        </tools>
       </tools>
       <tools>
         <label>Operating Systems</label>
-        <toolSet>
-          <toolSet>RedHat Enterprise Linux</toolSet>
-          <toolSet>OSX</toolSet>
-          <toolSet>Windows</toolSet>
-        </toolSet>
+        <tools>
+          <tools>RedHat Enterprise Linux</tools>
+          <tools>OSX</tools>
+          <tools>Windows</tools>
+        </tools>
       </tools>
        <tools>
         <label>Databases</label>
-        <toolSet>
-          <toolSet>Oracle</toolSet>
-          <toolSet>MySQL</toolSet>
-        </toolSet>
+        <tools>
+          <tools>Oracle</tools>
+          <tools>MySQL</tools>
+        </tools>
       </tools>
-    </tools>
+    </toolSet>
   </technicalSection>
 </Resume>

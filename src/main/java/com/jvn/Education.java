@@ -2,6 +2,7 @@ package com.jvn;
 
 import com.google.common.base.MoreObjects;
 import com.jvn.util.DateRange;
+import org.apache.commons.lang3.builder.ToStringBuilder;
 
 public class Education {
 
@@ -56,12 +57,6 @@ public class Education {
 
   @Override
   public String toString() {
-    return MoreObjects.toStringHelper(this)
-        .add("degree", degree)
-        .add("name", name)
-        .add("address", address)
-        .add("gpa", gpa)
-        .add("tenure", tenure)
-        .toString();
+    return ToStringBuilder.reflectionToString(this);
   }
 }
