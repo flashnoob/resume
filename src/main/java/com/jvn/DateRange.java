@@ -1,4 +1,4 @@
-package com.jvn.util;
+package com.jvn;
 
 import java.util.Objects;
 import org.apache.commons.lang3.builder.ToStringBuilder;

@@ -1,4 +1,4 @@
-package com.jvn.util;
+package com.jvn;
 
 import java.time.Month;
 import org.apache.commons.lang3.StringUtils;
@@ -34,7 +34,7 @@ public class SimpleDate {
   }
 
   public String getReadable() {
-    return String.format("%s. %d", StringUtils.left(StringUtils.upperCase(month.toString()), 3), year);
+    return String.format("%s. %d", StringUtils.left(StringUtils.capitalize(StringUtils.lowerCase(month.toString())), 3), year);
   }
 
   @Override

@@ -1,7 +1,5 @@
 package com.jvn;
 
-import com.google.common.base.MoreObjects;
-import com.jvn.util.DateRange;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
 public class Education {
