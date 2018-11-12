@@ -1,7 +1,5 @@
 package com.jvn.resume;
 
-import com.google.common.base.MoreObjects;
-
 public class LatexResume extends Resume {
 
   private Theme theme;

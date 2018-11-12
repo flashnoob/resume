@@ -1,8 +1,8 @@
 package com.jvn.resume.section;
 
-import com.google.common.base.MoreObjects;
 import com.jvn.Experience;
 import java.util.List;
+import org.apache.commons.lang3.builder.ToStringBuilder;
 
 public class ExperienceSection extends AbstractTitledSection {
 
@@ -29,9 +29,6 @@ public class ExperienceSection extends AbstractTitledSection {
 
   @Override
   public String toString() {
-    return MoreObjects.toStringHelper(this)
-        .add("experiences", experiences)
-        .omitNullValues()
-        .toString();
+    return ToStringBuilder.reflectionToString(this);
   }
 }
