@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.io.Writer;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import org.apache.commons.io.FilenameUtils;
 import org.apache.velocity.Template;
 import org.apache.velocity.VelocityContext;
 import org.apache.velocity.app.Velocity;
@@ -55,7 +56,7 @@ public class VelocityPrinter implements Printer {
 
     VelocityContext context = new VelocityContext();
     context.put("resume", resume);
-    context.put("fileName", out.getFilePath());
+    context.put("fileName", FilenameUtils.getName(out.getFilePath()));
     context.put("today", LocalDate.now().format(DateTimeFormatter.ISO_LOCAL_DATE));
 
     Writer writer = new FileWriter(new File(out.getFilePath()));
