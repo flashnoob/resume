@@ -17,7 +17,7 @@ public class Main {
     System.out.println(resume);
 
     FileUtil template = new FileUtil("templates/resume.vm");
-    FileUtil out = new FileUtil("out/JohnVanNote.tex");
+    FileUtil out = new FileUtil("out/JohnVanNoteResume.tex");
     Printer printer = new VelocityPrinter(template, out);
     printer.printResume(resume);
   }

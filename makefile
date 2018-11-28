@@ -8,13 +8,11 @@
 ##
 
 # variables
-me=John_Van_Note
-resume_doc=$(me)_Resume
-letter_doc=$(me)_Cover_Letter
+resume_src=./out/JohnVanNoteResume
 build=pdflatex
 
 resume :
-	$(build) $(resume_doc).tex
+	$(build) $(resume_src).tex
 
 view : resume
 	open $(resume_doc).pdf
