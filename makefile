@@ -8,11 +8,22 @@
 ##
 
 # variables
-resume_src=./out/JohnVanNoteResume
+resume_name=JohnVanNoteResume
+resume_src=./out/$(resume_name)
+resume_target=$(resume_name)
 build=pdflatex
 
-resume :
+clean :
+	mvn clean
+
+compile : clean
+	mvn compile
+
+run : compile
+	mvn exec:java -Dexec.mainClass="com.jvn.Main"
+
+resume : run
 	$(build) $(resume_src).tex
 
 view : resume
-	open $(resume_doc).pdf
+	open $(resume_target).pdf
