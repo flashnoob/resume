@@ -16,21 +16,21 @@ build_pdf=pdflatex
 mvn=mvn -q
 
 clean :
-	echo "Cleaning up"
+	echo "Cleaning up..."
 	$(mvn) clean
 
 compile : clean
-	echo "Compiling from source"
+	echo "Compiling from source..."
 	$(mvn) compile
 
 run : compile
-	echo "Building Resume"
+	echo "Building resume..."
 	$(mvn) exec:java -Dexec.mainClass="com.jvn.Main"
 
 resume : run
-	echo "Converting $(resume_src) to PDF"
+	echo "Converting $(resume_src) to a PDF..."
 	$(build_pdf) $(resume_src) > /dev/null
 
 view : resume
-	echo "Opening $(resume_target)"
+	echo "Opening $(resume_target)..."
 	open $(resume_target)
