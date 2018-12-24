@@ -1,7 +1,6 @@
 package com.jvn;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import com.jvn.resume.LatexResume;
 import com.jvn.resume.Resume;
 import com.jvn.resume.printer.Printer;

@@ -55,7 +55,7 @@ public class LatexResume extends Resume {
 
     private String name;
 
-    private FontSize(String name) {
+    FontSize(String name) {
       this.setName(name);
     }
 
@@ -74,7 +74,7 @@ public class LatexResume extends Resume {
 
     private String name;
 
-    private FontFamily(String name) {
+    FontFamily(String name) {
       this.setName(name);
     }
 
@@ -97,7 +97,7 @@ public class LatexResume extends Resume {
 
     private String name;
 
-    private PaperSize(String name) {
+    PaperSize(String name) {
       this.setName(name);
     }
 
@@ -118,7 +118,7 @@ public class LatexResume extends Resume {
 
     private String name;
 
-    private Theme(String name) {
+    Theme(String name) {
       this.setName(name);
     }
 
@@ -142,7 +142,7 @@ public class LatexResume extends Resume {
 
     private String name;
 
-    private Color(String name) {
+    Color(String name) {
       this.setName(name);
     }
 

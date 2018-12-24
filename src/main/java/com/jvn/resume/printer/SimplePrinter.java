@@ -26,7 +26,8 @@ public class SimplePrinter implements Printer {
   }
 
   public void close() throws IOException {
-    if (out instanceof Writer)
+    if (out instanceof Writer) {
       ((Writer) out).close();
+    }
   }
 }

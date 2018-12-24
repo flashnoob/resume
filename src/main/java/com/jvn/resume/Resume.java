@@ -9,7 +9,7 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 public class Resume {
 
   private PersonalSection personalSection;
-  private ExperienceSection  experienceSection;
+  private ExperienceSection experienceSection;
   private EducationSection educationSection;
   private TechnicalSection technicalSection;
 

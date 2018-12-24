@@ -8,7 +8,7 @@ public class ToolSet {
   private String label;
   private List<String> tools;
 
-  public ToolSet(){
+  public ToolSet() {
   }
 
   public String getLabel() {

@@ -37,4 +37,5 @@ public class DateRange {
     return ToStringBuilder.reflectionToString(this);
 
   }
+
 }

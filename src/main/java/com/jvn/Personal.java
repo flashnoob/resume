@@ -67,4 +67,5 @@ public class Personal {
   public String toString() {
     return ToStringBuilder.reflectionToString(this);
   }
+
 }
