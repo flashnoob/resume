@@ -1,5 +1,12 @@
 package com.jvn.resume;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor
 public class LatexResume extends Resume {
 
   private Theme theme;
@@ -8,63 +15,15 @@ public class LatexResume extends Resume {
   private PaperSize paperSize;
   private Color color;
 
-  public Theme getTheme() {
-    return theme;
-  }
-
-  public void setTheme(Theme theme) {
-    this.theme = theme;
-  }
-
-  public FontSize getFontSize() {
-    return fontSize;
-  }
-
-  public void setFontSize(FontSize fontSize) {
-    this.fontSize = fontSize;
-  }
-
-  public FontFamily getFontFamily() {
-    return fontFamily;
-  }
-
-  public void setFontFamily(FontFamily fontFamily) {
-    this.fontFamily = fontFamily;
-  }
-
-  public PaperSize getPaperSize() {
-    return paperSize;
-  }
-
-  public void setPaperSize(PaperSize paperSize) {
-    this.paperSize = paperSize;
-  }
-
-  public Color getColor() {
-    return color;
-  }
-
-  public void setColor(Color color) {
-    this.color = color;
-  }
-
   public enum FontSize {
     TEN("10pt"),
     ELEVEN("11pt"),
     TWELVE("12pt");
 
-    private String name;
+    private @Getter @Setter String name;
 
     FontSize(String name) {
       this.setName(name);
-    }
-
-    public String getName() {
-      return name;
-    }
-
-    public void setName(String name) {
-      this.name = name;
     }
   }
 
@@ -72,18 +31,10 @@ public class LatexResume extends Resume {
     SANS("sans"),
     ROMAN("roman");
 
-    private String name;
+    private @Getter @Setter String name;
 
     FontFamily(String name) {
       this.setName(name);
-    }
-
-    public String getName() {
-      return name;
-    }
-
-    public void setName(String name) {
-      this.name = name;
     }
   }
 
@@ -95,18 +46,10 @@ public class LatexResume extends Resume {
     LEGAL("legalpaper"),
     LETTER("letterpaper");
 
-    private String name;
+    private @Getter @Setter String name;
 
     PaperSize(String name) {
       this.setName(name);
-    }
-
-    public String getName() {
-      return name;
-    }
-
-    public void setName(String name) {
-      this.name = name;
     }
   }
 
@@ -116,18 +59,10 @@ public class LatexResume extends Resume {
     OLDSTYLE("oldstyle"),
     BANKING("banking");
 
-    private String name;
+    private @Getter @Setter String name;
 
     Theme(String name) {
       this.setName(name);
-    }
-
-    public String getName() {
-      return name;
-    }
-
-    public void setName(String name) {
-      this.name = name;
     }
   }
 
@@ -140,18 +75,10 @@ public class LatexResume extends Resume {
     GREY("grey"),
     BLACK("black");
 
-    private String name;
+    private @Getter @Setter String name;
 
     Color(String name) {
       this.setName(name);
-    }
-
-    public String getName() {
-      return name;
-    }
-
-    public void setName(String name) {
-      this.name = name;
     }
   }
 

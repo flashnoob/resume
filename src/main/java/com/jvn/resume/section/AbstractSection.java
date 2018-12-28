@@ -1,8 +1,10 @@
 package com.jvn.resume.section;
 
+import lombok.NoArgsConstructor;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
-public abstract class Section {
+@NoArgsConstructor
+public abstract class AbstractSection {
 
   @Override
   public String toString() {

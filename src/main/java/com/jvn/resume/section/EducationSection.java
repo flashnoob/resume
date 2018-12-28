@@ -2,29 +2,20 @@ package com.jvn.resume.section;
 
 import com.jvn.Education;
 import java.util.List;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
+@Getter
+@Setter
+@NoArgsConstructor
 public class EducationSection extends AbstractTitledSection {
 
   private List<Education> schools;
 
-  public EducationSection() {
-  }
-
-  public EducationSection(List<Education> schools) {
-    this.setSchools(schools);
-  }
-
   @Override
   public String getTitle() {
     return "Education";
-  }
-
-  public List<Education> getSchools() {
-    return schools;
-  }
-
-  public void setSchools(List<Education> schools) {
-    this.schools = schools;
   }
 
 }
