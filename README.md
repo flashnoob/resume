@@ -17,7 +17,7 @@ make view
 
 ### Lombok
 
-Project Lombok is a build tool used to reduce boilerplate code in java see [here] (https://projectlombok.org/). I'm a little iffy on if I 
+Project Lombok is a build tool used to reduce boilerplate code in java see here [here](https://projectlombok.org/ "Project Lombok"). I'm a little iffy on if I 
 should use it because it requires a plugin for IntelliJ to prevent my IDE from yelling at me. But for now, it's part of the project.
 
 ### LaTeX
