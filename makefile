@@ -4,7 +4,7 @@
 # John Van Note
 # 2016-01-09
 ##
-# Makefile for my resume latex
+# Resume makefile
 ##
 
 .SILENT: clean compile run resume view

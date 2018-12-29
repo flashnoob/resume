@@ -2,16 +2,11 @@
 
 This the source code for my resume in LaTeX and also the functionality to support a cover letter.
 
-## Building
+## Build Process
 
-In order to build my resume as a pdf, run the following:
+In order to build the resume from source, execute the following:
 ```
 make resume
-```
-
-You can skip this, and view my resume by running:
-```
-make view
 ```
 
 ## Prerequisites
@@ -24,6 +19,15 @@ There are a few prerequisites that need to be installed/configured to complete t
 * [pdflatex](http://www.math.rug.nl/~trentelman/jacob/pdflatex/pdflatex.html "pdflatex")
 
 ## Technologies Used
+
+### Apache Maven
+
+I use Maven to build the Java modules of the project. For more on Maven, see [here](https://maven.apache.org/ "Apache Maven")
+
+### GNU Make
+
+I am using a makefile to control the build process for the entire build cycle of the resume (cleaning, building from source, converting to 
+a PDF). For more info on makefiles, check [here](https://www.gnu.org/software/make/ "GNU Make").
 
 ### The Jackson Project
 
