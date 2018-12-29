@@ -15,11 +15,17 @@ make view
 ```
 ## Technologies Used
 
+### Jackson Project
+
+The Jackson Project is used to parse JSON (and XML) data and bind it to POJO Resume objects to de-couple the data and its implementation. 
+For more information on the Jackson Project see [here](https://github.com/FasterXML/jackson "Jackson Project") 
+
 ### Lombok
 
-Project Lombok is a build tool used to reduce boilerplate code in java see here [here](https://projectlombok.org/ "Project Lombok"). I'm a little iffy on if I 
-should use it because it requires a plugin for IntelliJ to prevent my IDE from yelling at me. But for now, it's part of the project.
+Project Lombok is a build tool used to reduce boilerplate code in java see here [here](https://projectlombok.org/ "Project Lombok"). I'm a 
+little iffy on if I should use it because it requires a plugin for IntelliJ to prevent my IDE from yelling at me. But for now, it's part of 
+the project.
 
 ### LaTeX
-The LaTeX modules for Resume and Cover Letter originated here, I edited them to my liking, but all credit here, I am not experienced in LaTeX:
-https://www.sharelatex.com/templates/cv-or-resume?&nocdn=true.
+The LaTeX modules for Resume and Cover Letter originated here, I edited them to my liking, but all credit here, I am not experienced in 
+LaTeX: https://www.sharelatex.com/templates/cv-or-resume?&nocdn=true.
