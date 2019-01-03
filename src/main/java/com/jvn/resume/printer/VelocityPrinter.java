@@ -1,7 +1,6 @@
 package com.jvn.resume.printer;
 
 import com.jvn.resume.Resume;
-import com.jvn.util.FileUtil;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -22,10 +21,10 @@ import org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader;
 @Setter
 public class VelocityPrinter implements Printer {
 
-  private FileUtil template;
-  private FileUtil out;
+  private File template;
+  private File out;
 
-  public VelocityPrinter(FileUtil template, FileUtil out) {
+  public VelocityPrinter(File template, File out) {
     this.setTemplate(template);
     this.setOut(out);
   }
@@ -40,14 +39,14 @@ public class VelocityPrinter implements Printer {
     VelocityEngine ve = new VelocityEngine();
     ve.init();
 
-    Template t = ve.getTemplate(template.getFilePath());
+    Template t = ve.getTemplate(template.getPath());
 
     VelocityContext context = new VelocityContext();
     context.put("resume", resume);
-    context.put("fileName", FilenameUtils.getName(out.getFilePath()));
+    context.put("fileName", FilenameUtils.getName(out.getPath()));
     context.put("today", LocalDate.now().format(DateTimeFormatter.ISO_LOCAL_DATE));
 
-    Writer writer = new FileWriter(new File(out.getFilePath()));
+    Writer writer = new FileWriter(new File(out.getPath()));
 
     t.merge(context, writer);
 
