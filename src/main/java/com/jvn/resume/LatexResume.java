@@ -20,10 +20,10 @@ public class LatexResume extends Resume {
     ELEVEN("11pt"),
     TWELVE("12pt");
 
-    private @Getter @Setter String name;
+    private @Getter String name;
 
     FontSize(String name) {
-      this.setName(name);
+      this.name = name;
     }
   }
 
@@ -31,10 +31,10 @@ public class LatexResume extends Resume {
     SANS("sans"),
     ROMAN("roman");
 
-    private @Getter @Setter String name;
+    private @Getter String name;
 
     FontFamily(String name) {
-      this.setName(name);
+      this.name = name;
     }
   }
 
@@ -46,10 +46,10 @@ public class LatexResume extends Resume {
     LEGAL("legalpaper"),
     LETTER("letterpaper");
 
-    private @Getter @Setter String name;
+    private @Getter String name;
 
     PaperSize(String name) {
-      this.setName(name);
+      this.name = name;
     }
   }
 
@@ -59,10 +59,10 @@ public class LatexResume extends Resume {
     OLDSTYLE("oldstyle"),
     BANKING("banking");
 
-    private @Getter @Setter String name;
+    private @Getter String name;
 
     Theme(String name) {
-      this.setName(name);
+      this.name = name;
     }
   }
 
@@ -75,10 +75,10 @@ public class LatexResume extends Resume {
     GREY("grey"),
     BLACK("black");
 
-    private @Getter @Setter String name;
+    private @Getter String name;
 
     Color(String name) {
-      this.setName(name);
+      this.name = name;
     }
   }
 

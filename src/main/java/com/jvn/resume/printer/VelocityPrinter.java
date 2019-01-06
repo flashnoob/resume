@@ -2,9 +2,11 @@ package com.jvn.resume.printer;
 
 import com.jvn.resume.Resume;
 import java.io.File;
-import java.io.FileWriter;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.OutputStreamWriter;
 import java.io.Writer;
+import java.nio.charset.StandardCharsets;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import lombok.Getter;
@@ -39,19 +41,19 @@ public class VelocityPrinter implements Printer {
     VelocityEngine ve = new VelocityEngine();
     ve.init();
 
-    Template t = ve.getTemplate(template.getPath());
+    Template resumeTemplate = ve.getTemplate(template.getPath());
 
     VelocityContext context = new VelocityContext();
     context.put("resume", resume);
     context.put("fileName", FilenameUtils.getName(out.getPath()));
     context.put("today", LocalDate.now().format(DateTimeFormatter.ISO_LOCAL_DATE));
 
-    Writer writer = new FileWriter(new File(out.getPath()));
-
-    t.merge(context, writer);
-
-    writer.flush();
-    writer.close();
+    File outFile = new File(out.getPath());
+    try (FileOutputStream outStream = new FileOutputStream(outFile);
+        Writer writer = new OutputStreamWriter(outStream, StandardCharsets.UTF_8)) {
+      resumeTemplate.merge(context, writer);
+      writer.flush();
+    }
 
   }
 }
