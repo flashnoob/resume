@@ -1,6 +1,6 @@
 package com.jvn.resume.section;
 
-import com.jvn.ToolSet;
+import com.jvn.resume.ToolSet;
 import java.util.List;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

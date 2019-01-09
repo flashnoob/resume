@@ -1,4 +1,4 @@
-package com.jvn;
+package com.jvn.resume;
 
 import java.time.Month;
 import lombok.Getter;

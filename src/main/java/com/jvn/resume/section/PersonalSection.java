@@ -1,6 +1,6 @@
 package com.jvn.resume.section;
 
-import com.jvn.Address;
+import com.jvn.resume.Address;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

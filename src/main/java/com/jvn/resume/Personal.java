@@ -1,4 +1,4 @@
-package com.jvn;
+package com.jvn.resume;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -8,13 +8,14 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 @Getter
 @Setter
 @NoArgsConstructor
-public class Education {
+public class Personal {
 
-  private String degree;
-  private String name;
+  private String firstName;
+  private String lastName;
   private Address address;
-  private String gpa;
-  private DateRange tenure;
+  private String phoneNumber;
+  private String email;
+  private String website;
 
   @Override
   public String toString() {

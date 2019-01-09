@@ -1,4 +1,4 @@
-package com.jvn;
+package com.jvn.resume;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.jvn.resume.LatexResume;

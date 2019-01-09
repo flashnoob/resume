@@ -1,6 +1,6 @@
 package com.jvn.resume.section;
 
-import com.jvn.Education;
+import com.jvn.resume.Education;
 import java.util.List;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

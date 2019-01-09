@@ -25,7 +25,7 @@ compile : clean
 
 run : compile
 	echo "Building resume..."
-	$(mvn) exec:java -Dexec.mainClass="com.jvn.Main"
+	$(mvn) exec:java -Dexec.mainClass="com.jvn.resume.Main"
 
 resume : run
 	echo "Converting $(resume_src) to a PDF..."
