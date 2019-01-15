@@ -3,18 +3,16 @@ package com.jvn.resume.printer;
 import com.jvn.resume.Resume;
 import java.io.IOException;
 import java.io.Writer;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
+@AllArgsConstructor
 public class SimplePrinter implements Printer {
 
   protected Appendable out;
-
-  public SimplePrinter(Appendable out) {
-    this.setOut(out);
-  }
 
   @Override
   public void printResume(Resume resume) throws IOException {
