@@ -5,6 +5,7 @@ import com.jvn.resume.Education;
 import com.jvn.resume.Resume;
 import com.jvn.resume.section.EducationSection;
 import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.io.PrintStream;
 import org.apache.commons.lang3.StringUtils;
 import org.testng.Assert;
@@ -48,6 +49,12 @@ public class SimplerPrinterUnitTest {
 
     System.setOut(outDefault);
     System.setErr(errDefault);
+  }
+
+  @Test
+  public void close_NonWriter_NothingHappens() throws IOException {
+    printer = new SimplePrinter(System.out);
+    printer.close();
   }
 
 }
