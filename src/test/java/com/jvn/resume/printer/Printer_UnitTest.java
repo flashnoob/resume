@@ -4,7 +4,7 @@ import com.jvn.resume.Resume;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class PrinterUnitTest {
+public class Printer_UnitTest {
 
   private Printer printer = new PrinterImplementation();
 
