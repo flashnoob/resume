@@ -1,0 +1,235 @@
+{
+  "personalSection": {
+    "firstName": "John",
+    "lastName": "Van Note",
+    "address": {
+      "street": "6210 Belcrest Road",
+      "additionalStreet": "Apt. 1438",
+      "city": "Hyattsville",
+      "state": "MD",
+      "zip": "20782"
+    },
+    "phoneNumber": "215.518.0823",
+    "email": "johnlvannote@protonmail.com",
+    "website": "https://github.com/JohnVanNote"
+  },
+  "experienceSection": {
+    "experiences": [
+      {
+        "title": "Software Engineer",
+        "tenure": {
+          "startDate": {
+            "year": 2018,
+            "month": "MARCH"
+          }
+        },
+        "company": "Sila Solutions Group",
+        "address": {
+          "city": "Arlington",
+          "state": "VA"
+        },
+        "technologyUsed": [
+          "Java",
+          "Apache Tomcat",
+          "Oracle Database",
+          "Active Directory/LDAP",
+          "SAP",
+          "Vagrant",
+          "MySQL",
+          "GitLab",
+          "BitBucket"
+        ],
+        "highlights": [
+          "Installed and implemented SailPoint’s IdentityIQ and IdentityNow on client sites with custom integrations and configuration management.",
+          "Developed a custom integration between IdentityIQ and an external ticketing service to perform user actions (account creation, account removal, access requests) for external systems.",
+          "Designed a custom solutions for application management, service account governance, and account provisioning in the IdentityIQ system.",
+          "Helped drive an effort for improving code testability, specifically using unit tests with the TestNG and EasyMock frameworks.",
+          "Contributed as a member of multiple internal development teams to write maintainable, modular code that could be leveraged across projects.",
+          "Developed and lead program to train new developers."
+        ]
+      },
+      {
+        "title": "Software Support Engineer",
+        "tenure": {
+          "startDate": {
+            "year": 2016,
+            "month": "FEBRUARY"
+          },
+          "endDate": {
+            "year": 2017,
+            "month": "MARCH"
+          }
+        },
+        "company": "Corporation Service Company",
+        "address": {
+          "city": "Wilmington",
+          "state": "DE"
+        },
+        "technologyUsed": [
+          "Java/Groovy",
+          "Python",
+          "BASH",
+          "Apache HTTP Server",
+          "Apache Tomcat",
+          "IIS",
+          "Oracle Weblogic",
+          "Oracle Database",
+          "GitHub",
+          "VirtualBox"
+        ],
+        "highlights": [
+          "Designed and developed a Groovy-based application, which automated a previously manually-compiled monthly application performance index. This aggregated data from multiple reporting tools leveraging the Splunk SDK for Java and reading from an   Oracle 11g database backend. ",
+          "Engineered and supported the implementation of enterprise ETL and Business Intelligence Reporting tools across four environments, spanning more than fourteen application servers. Participated in planning, configuration, and troubleshooting of all server related issues. ",
+          "Developed a solution to remediate application latency in an Apache Tomcat application by creating anextensible custom Python library to execute BASH commands on RHEL servers. ",
+          "Authored a variety of BASH scripts to remediate Unix server issues."
+        ]
+      },
+      {
+        "title": "Technical Application Support Engineer",
+        "tenure": {
+          "startDate": {
+            "year": 2015,
+            "month": "MARCH"
+          },
+          "endDate": {
+            "year": 2016,
+            "month": "FEBRUARY"
+          }
+        },
+        "company": "Corporation Service Company",
+        "address": {
+          "city": "Wilmington",
+          "state": "DE"
+        },
+        "technologyUsed": [
+          "Groovy",
+          "VBA",
+          "BASH",
+          "Splunk",
+          "GitHub",
+          "SVN",
+          "Apache Tomcat",
+          "IIS7",
+          "Oracle Database"
+        ],
+        "highlights": [
+          "Automated reporting processes using VBA, which parsed data and generated charts in Microsoft Excel with a single click as opposed to a manual process. ",
+          "Maintained a legacy Grails Application, fixing application defects, and extending functionality.",
+          "First responder and level one support for over 10 applications and their respective servers."
+        ]
+      },
+      {
+        "title": "Technical Support Engineer",
+        "tenure": {
+          "startDate": {
+            "year": 2014,
+            "month": "OCTOBER"
+          },
+          "endDate": {
+            "year": 2015,
+            "month": "JANUARY"
+          }
+        },
+        "company": "Solve Media, Inc.",
+        "address": {
+          "city": "Philadelphia",
+          "state": "PA"
+        },
+        "technologyUsed": [
+          "JavaScript",
+          "VBA",
+          "Perl",
+          "PHP",
+          "Python",
+          "Ruby",
+          "Java",
+          ".NET",
+          "VMWare Fusion"
+        ],
+        "highlights": [
+          "Provided technical support to customers integrating open-source CAPTCHA technology in a variety of languages/frameworks including Perl, PHP, Python, Ruby, JSP (Java), and ASP.NET. This included supporting web plugins for various open-source content management systems, such as WordPress.",
+          "Estimated customer availability across geographic targets using JavaScript and VBA to automate the process, which reduced overall estimation time by over 80% and improved reliability. ",
+          "Completed code reviews and quality assurance tasks on existing libraries and plug-ins."
+        ]
+      }
+    ]
+  },
+  "educationSection": {
+    "schools": [
+      {
+        "degree": "Bachelor of Science in Business Administration, Minor in Computer Science",
+        "name": "Drexel University",
+        "address": {
+          "city": "Philadelphia",
+          "state": "PA"
+        },
+        "gpa": "3.59",
+        "tenure": {
+          "startDate": {
+            "year": 2008,
+            "month": "SEPTEMBER"
+          },
+          "endDate": {
+            "year": 2013,
+            "month": "JUNE"
+          }
+        }
+      }
+    ]
+  },
+  "technicalSection": {
+    "toolSet": [
+      {
+        "label": "Programming/Scripting Languages",
+        "tools": [
+          "Java/Groovy",
+          "Python",
+          "C/C++",
+          "BASH",
+          "VBA",
+          "JavaScript",
+          "PowerShell"
+        ]
+      },
+      {
+        "label": "Development Tools",
+        "tools": [
+          "Git",
+          "SVN",
+          "Vagrant",
+          "IntelliJ/Eclipse",
+          "iTerm 2"
+        ]
+      },
+      {
+        "label": "Web Servers",
+        "tools": [
+          "Apache HTTP Server",
+          "IIS",
+          "Apache Tomcat",
+          "Oracle Weblogic"
+        ]
+      },
+      {
+        "label": "Operating Systems",
+        "tools": [
+          "RedHat Enterprise Linux",
+          "OSX",
+          "Windows"
+        ]
+      },
+      {
+        "label": "Databases",
+        "tools": [
+          "Oracle",
+          "MySQL"
+        ]
+      }
+    ]
+  },
+  "theme": "CLASSIC",
+  "fontSize": "TEN",
+  "fontFamily": "SANS",
+  "paperSize": "A4",
+  "color": "BLACK"
+}

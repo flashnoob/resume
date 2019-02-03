@@ -1,0 +1,89 @@
+#set( $personal = ${resume.personalSection} )
+#set( $address = ${personal.address} )
+#set( $experiences = ${resume.experienceSection.experiences} )
+#set( $schools = ${resume.educationSection.schools} )
+#set( $toolSet = ${resume.technicalSection.toolSet} )
+
+%% start of file '$fileName'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%%
+%% ${personal.firstName} ${personal.lastName}
+%% $today
+%%
+%% Resume source code
+%%
+
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+% possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[${resume.fontSize.name},${resume.paperSize.name},${resume.fontFamily.name}]{moderncv}
+
+% moderncv themes
+% style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvstyle{${resume.theme.name}}
+
+% color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvcolor{${resume.color.name}}
+
+% to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\renewcommand{\familydefault}{\sfdefault}
+
+% uncomment to suppress automatic page numbering for CVs longer than one page
+\nopagenumbers{}
+
+% character encoding
+% if you are not using xelatex ou lualatex, replace by the encoding you are using
+\usepackage[utf8]{inputenc}
+
+% if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+%\usepackage{CJKutf8}
+
+% adjust the page margins
+\usepackage[scale=.825]{geometry}
+
+% if you want to change the width of the column with the dates
+%\setlength{\hintscolumnwidth}{3cm}
+% for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+%\setlength{\makecvtitlenamewidth}{10cm}
+
+% personal data
+\name{${personal.firstName}}{${personal.lastName}}
+% optional, remove / comment the line if not wanted
+%\title{Resume title}
+\address{${address.street}, ${address.additionalStreet}}{${address.city}, ${address.state}}{${address.zip}}
+\phone[mobile]{${personal.phoneNumber}}
+\email{${personal.email}}
+\homepage{${personal.website}}
+
+\begin{document}
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{${resume.experienceSection.title}}
+#foreach ( $experience in $experiences )
+\cventry{${experience.tenure.startDate.readable} -#if( ${experience.tenure.endDate} ) ${experience.tenure.endDate.readable}#else Current#end}{${experience.title}}{${experience.company}}{${experience.address.city}, ${experience.address.state}}{}{
+  \textit{Technologies used:#foreach ( $tech in ${experience.technologyUsed} ) $tech#if( $foreach.hasNext ),#else.#end#end}%
+  \begin{itemize}%
+    #foreach ($highlight in ${experience.highlights} )
+    \item $highlight
+    #end
+  \end{itemize}
+}
+
+#end
+
+\section{${resume.educationSection.title}}
+#foreach ( $school in $schools )
+\cventry{${school.tenure.startDate.readable} -#if( ${school.tenure.endDate} ) ${school.tenure.endDate.readable}#else Current#end}{${school.degree}}{${school.name}}{${school.address.city}, ${school.address.state}}{\textit{${school.gpa} GPA}}{}
+#end
+
+\section{${resume.technicalSection.title}}
+#foreach ( $tools in $toolSet )
+\cvlistitem{${tools.label}:#foreach ( $tool in ${tools.tools} ) $tool#if( $foreach.hasNext ),#else.#end#end}
+#end
+
+\end{document}
+%% end of file '$fileName'.

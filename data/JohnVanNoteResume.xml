@@ -1,0 +1,245 @@
+<Resume>
+  <theme>CLASSIC</theme>
+  <fontSize>TEN</fontSize>
+  <fontFamily>SANS</fontFamily>
+  <paperSize>A4</paperSize>
+  <color>BLACK</color>
+  <personalSection>
+    <firstName>John</firstName>
+    <lastName>Van Note</lastName>
+    <address>
+      <street>6210 Belcrest Road</street>
+      <additionalStreet>Apt. 1438</additionalStreet>
+      <city>Hyattsville</city>
+      <state>MD</state>
+      <zip>20782</zip>
+    </address>
+    <phoneNumber>215.518.0823</phoneNumber>
+    <email>johnlvannote@protonmail.com</email>
+    <website>https://github.com/JohnVanNote</website>
+  </personalSection>
+  <experienceSection>
+    <experiences>
+      <experiences>
+        <title>Software Engineer</title>
+        <tenure>
+          <startDate>
+            <year>2018</year>
+            <month>MARCH</month>
+          </startDate>
+          <endDate/>
+        </tenure>
+        <company>Sila Solutions Group</company>
+        <address>
+          <street/>
+          <additionalStreet/>
+          <city>Arlington</city>
+          <state>VA</state>
+          <zip/>
+        </address>
+        <technologyUsed>
+          <technologyUsed>Java</technologyUsed>
+          <technologyUsed>Apache Tomcat</technologyUsed>
+          <technologyUsed>Oracle Database</technologyUsed>
+          <technologyUsed>Active Directory/LDAP</technologyUsed>
+          <technologyUsed>Vagrant</technologyUsed>
+          <technologyUsed>MySQL Database</technologyUsed>
+          <technologyUsed>Git</technologyUsed>
+          <technologyUsed>SVN</technologyUsed>
+        </technologyUsed>
+        <highlights>
+          <highlights>Installed and implemented SailPoint’s IdentityIQ and IdentityNow on client sites with custom integrations and configuration management.</highlights>
+          <highlights>Developed a custom integration between IdentityIQ and an external ticketing service to perform user actions (account creation, account removal, access requests) for external systems.</highlights>
+          <highlights>Designed a custom solution for application management, service account governance, and account provisioning in the IdentityIQ system.</highlights>
+          <highlights>Helped drive an effort for improving code testability, specifically using unit tests with the TestNG and EasyMock frameworks.</highlights>
+          <highlights>Contributed as a member of multiple internal development teams to write maintainable, modular code that could be leverage across projects</highlights>
+          <highlights>Developed and lead program to train new developers.</highlights>
+        </highlights>
+      </experiences>
+      <experiences>
+        <title>Software Support Engineer</title>
+        <tenure>
+          <startDate>
+            <year>2016</year>
+            <month>FEBRUARY</month>
+          </startDate>
+          <endDate>
+            <year>2017</year>
+            <month>MARCH</month>
+          </endDate>
+        </tenure>
+        <company>Corporation Service Company</company>
+        <address>
+          <street/>
+          <additionalStreet/>
+          <city>Wilmington</city>
+          <state>DE</state>
+          <zip/>
+        </address>
+        <technologyUsed>
+          <technologyUsed>Java/Groovy</technologyUsed>
+          <technologyUsed>Python</technologyUsed>
+          <technologyUsed>BASH</technologyUsed>
+          <technologyUsed>Apache HTTP Server</technologyUsed>
+          <technologyUsed>Apache Tomcat</technologyUsed>
+          <technologyUsed>IIS</technologyUsed>
+          <technologyUsed>Oracle Weblogic</technologyUsed>
+          <technologyUsed>Oracle Database</technologyUsed>
+          <technologyUsed>GitHub</technologyUsed>
+          <technologyUsed>VirtualBox</technologyUsed>
+        </technologyUsed>
+        <highlights>
+          <highlights>Designed and developed a Groovy-based application, which automated a previously manually-compiled monthly application performance index. This aggregated data from multiple reporting tools leveraging the Splunk SDK for Java and reading from an Oracle 11g database backend.</highlights>
+          <highlights>Engineered and supported the implementation of enterprise ETL and Business Intelligence Reporting tools across four environments, spanning more than fourteen application servers. Participated in planning, configuration, and troubleshooting of all server related issues.</highlights>
+          <highlights>Developed a solution to remediate application latency in an Apache Tomcat application by creating anextensible custom Python library to execute BASH commands on RHEL servers.</highlights>
+          <highlights>Authored a variety of BASH scripts to remediate Unix server issues.</highlights>
+        </highlights>
+      </experiences>
+      <experiences>
+        <title>Technical Application Support Engineer</title>
+        <tenure>
+          <startDate>
+            <year>2015</year>
+            <month>MARCH</month>
+          </startDate>
+          <endDate>
+            <year>2016</year>
+            <month>FEBRUARY</month>
+          </endDate>
+        </tenure>
+        <company>Corporation Service Company</company>
+        <address>
+          <street/>
+          <additionalStreet/>
+          <city>Wilmington</city>
+          <state>DE</state>
+          <zip/>
+        </address>
+        <technologyUsed>
+          <technologyUsed>Groovy</technologyUsed>
+          <technologyUsed>VBA</technologyUsed>
+          <technologyUsed>BASH</technologyUsed>
+          <technologyUsed>Splunk</technologyUsed>
+          <technologyUsed>GitHub</technologyUsed>
+          <technologyUsed>SVN</technologyUsed>
+          <technologyUsed>Apache Tomcat</technologyUsed>
+          <technologyUsed>IIS</technologyUsed>
+          <technologyUsed>Oracle Database</technologyUsed>
+        </technologyUsed>
+        <highlights>
+          <highlights>Automated reporting processes using VBA, which parsed data and generated charts in Microsoft Excel with a single click as opposed to a manual process.</highlights>
+          <highlights>Maintained a legacy Grails Application, fixing application defects, and extending functionality.</highlights>
+          <highlights>First responder and level one support for over 10 applications and their respective servers.</highlights>
+        </highlights>
+      </experiences>
+      <experiences>
+        <title>Technical Support Engineer</title>
+        <tenure>
+          <startDate>
+            <year>2014</year>
+            <month>OCTOBER</month>
+          </startDate>
+          <endDate>
+            <year>2015</year>
+            <month>JANUARY</month>
+          </endDate>
+        </tenure>
+        <company>Solve Media, Inc.</company>
+        <address>
+          <street/>
+          <additionalStreet/>
+          <city>Philadelphia</city>
+          <state>PA</state>
+          <zip/>
+        </address>
+        <technologyUsed>
+          <technologyUsed>JavaScript</technologyUsed>
+          <technologyUsed>VBA</technologyUsed>
+          <technologyUsed>Perl</technologyUsed>
+          <technologyUsed>PHP</technologyUsed>
+          <technologyUsed>Python</technologyUsed>
+          <technologyUsed>Ruby</technologyUsed>
+          <technologyUsed>Java</technologyUsed>
+          <technologyUsed>.NET</technologyUsed>
+          <technologyUsed>VMWare Fusion</technologyUsed>
+        </technologyUsed>
+        <highlights>
+          <highlights>Provided technical support to customers integrating open-source CAPTCHA technology in a variety of languages/frameworks including Perl, PHP, Python, Ruby, JSP (Java), and ASP.NET. This includedsupporting web plugins for various open-source content management systems, such as WordPress.</highlights>
+          <highlights>Estimated customer availability across geographic targets using JavaScript and VBA to automate the process, which reduced overall estimation time by over 80% and improved reliability.</highlights>
+          <highlights>Completed code reviews and quality assurance tasks on existing libraries and plug-ins.</highlights>
+        </highlights>
+      </experiences>
+    </experiences>
+  </experienceSection>
+  <educationSection>
+    <schools>
+      <schools>
+        <degree>Bachelor of Science in Business Administration, Minor in Computer Science</degree>
+        <name>Drexel University</name>
+        <address>
+          <city>Philadelphia</city>
+          <state>PA</state>
+        </address>
+        <gpa>3.59</gpa>
+        <tenure>
+          <startDate>
+            <year>2008</year>
+            <month>SEPTEMBER</month>
+          </startDate>
+          <endDate>
+            <year>2013</year>
+            <month>JUNE</month>
+          </endDate>
+        </tenure>
+      </schools>
+    </schools>
+  </educationSection>
+  <technicalSection>
+    <toolSet>
+      <tools>
+        <label>Programming/Scripting Languages</label>
+        <tools>
+          <tools>Java/Groovy</tools>
+          <tools>Python</tools>
+          <tools>C/C++</tools>
+          <tools>BASH</tools>
+          <tools>JavaScript</tools>
+          <tools>PowerShell</tools>
+        </tools>
+      </tools>
+      <tools>
+        <label>Development Tools</label>
+        <tools>
+          <tools>Git</tools>
+          <tools>SVN</tools>
+          <tools>Vagrant</tools>
+          <tools>IntelliJ/Eclipse</tools>
+        </tools>
+      </tools>
+      <tools>
+        <label>Web Servers</label>
+        <tools>
+          <tools>Apache HTTP Server</tools>
+          <tools>IIS</tools>
+          <tools>Apache Tomcat</tools>
+          <tools>Oracle Weblogic</tools>
+        </tools>
+      </tools>
+      <tools>
+        <label>Operating Systems</label>
+        <tools>
+          <tools>RedHat Enterprise Linux</tools>
+          <tools>OSX</tools>
+          <tools>Windows</tools>
+        </tools>
+      </tools>
+      <tools>
+        <label>Databases</label>
+        <tools>
+          <tools>Oracle</tools>
+          <tools>MySQL</tools>
+        </tools>
+      </tools>
+    </toolSet>
+  </technicalSection>
+</Resume>

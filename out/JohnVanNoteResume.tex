@@ -1,0 +1,113 @@
+
+%% start of file 'JohnVanNoteResume.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%%
+%% John Van Note
+%% 2019-02-03
+%%
+%% Resume source code
+%%
+
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+% possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[10pt,a4paper,sans]{moderncv}
+
+% moderncv themes
+% style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvstyle{classic}
+
+% color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvcolor{black}
+
+% to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\renewcommand{\familydefault}{\sfdefault}
+
+% uncomment to suppress automatic page numbering for CVs longer than one page
+\nopagenumbers{}
+
+% character encoding
+% if you are not using xelatex ou lualatex, replace by the encoding you are using
+\usepackage[utf8]{inputenc}
+
+% if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+%\usepackage{CJKutf8}
+
+% adjust the page margins
+\usepackage[scale=.825]{geometry}
+
+% if you want to change the width of the column with the dates
+%\setlength{\hintscolumnwidth}{3cm}
+% for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+%\setlength{\makecvtitlenamewidth}{10cm}
+
+% personal data
+\name{John}{Van Note}
+% optional, remove / comment the line if not wanted
+%\title{Resume title}
+\address{6210 Belcrest Road, Apt. 1438}{Hyattsville, MD}{20782}
+\phone[mobile]{215.518.0823}
+\email{johnlvannote@protonmail.com}
+\homepage{https://github.com/JohnVanNote}
+
+\begin{document}
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Experience}
+\cventry{Mar. 2018 - Current}{Software Engineer}{Sila Solutions Group}{Arlington, VA}{}{
+  \textit{Technologies used: Java, Apache Tomcat, Oracle Database, Active Directory/LDAP, SAP, Vagrant, MySQL, GitLab, BitBucket.}%
+  \begin{itemize}%
+        \item Installed and implemented SailPoint’s IdentityIQ and IdentityNow on client sites with custom integrations and configuration management.
+        \item Developed a custom integration between IdentityIQ and an external ticketing service to perform user actions (account creation, account removal, access requests) for external systems.
+        \item Designed a custom solutions for application management, service account governance, and account provisioning in the IdentityIQ system.
+        \item Helped drive an effort for improving code testability, specifically using unit tests with the TestNG and EasyMock frameworks.
+        \item Contributed as a member of multiple internal development teams to write maintainable, modular code that could be leveraged across projects.
+        \item Developed and lead program to train new developers.
+      \end{itemize}
+}
+
+\cventry{Feb. 2016 - Mar. 2017}{Software Support Engineer}{Corporation Service Company}{Wilmington, DE}{}{
+  \textit{Technologies used: Java/Groovy, Python, BASH, Apache HTTP Server, Apache Tomcat, IIS, Oracle Weblogic, Oracle Database, GitHub, VirtualBox.}%
+  \begin{itemize}%
+        \item Designed and developed a Groovy-based application, which automated a previously manually-compiled monthly application performance index. This aggregated data from multiple reporting tools leveraging the Splunk SDK for Java and reading from an   Oracle 11g database backend. 
+        \item Engineered and supported the implementation of enterprise ETL and Business Intelligence Reporting tools across four environments, spanning more than fourteen application servers. Participated in planning, configuration, and troubleshooting of all server related issues. 
+        \item Developed a solution to remediate application latency in an Apache Tomcat application by creating anextensible custom Python library to execute BASH commands on RHEL servers. 
+        \item Authored a variety of BASH scripts to remediate Unix server issues.
+      \end{itemize}
+}
+
+\cventry{Mar. 2015 - Feb. 2016}{Technical Application Support Engineer}{Corporation Service Company}{Wilmington, DE}{}{
+  \textit{Technologies used: Groovy, VBA, BASH, Splunk, GitHub, SVN, Apache Tomcat, IIS7, Oracle Database.}%
+  \begin{itemize}%
+        \item Automated reporting processes using VBA, which parsed data and generated charts in Microsoft Excel with a single click as opposed to a manual process. 
+        \item Maintained a legacy Grails Application, fixing application defects, and extending functionality.
+        \item First responder and level one support for over 10 applications and their respective servers.
+      \end{itemize}
+}
+
+\cventry{Oct. 2014 - Jan. 2015}{Technical Support Engineer}{Solve Media, Inc.}{Philadelphia, PA}{}{
+  \textit{Technologies used: JavaScript, VBA, Perl, PHP, Python, Ruby, Java, .NET, VMWare Fusion.}%
+  \begin{itemize}%
+        \item Provided technical support to customers integrating open-source CAPTCHA technology in a variety of languages/frameworks including Perl, PHP, Python, Ruby, JSP (Java), and ASP.NET. This included supporting web plugins for various open-source content management systems, such as WordPress.
+        \item Estimated customer availability across geographic targets using JavaScript and VBA to automate the process, which reduced overall estimation time by over 80% and improved reliability. 
+        \item Completed code reviews and quality assurance tasks on existing libraries and plug-ins.
+      \end{itemize}
+}
+
+
+\section{Education}
+\cventry{Sep. 2008 - Jun. 2013}{Bachelor of Science in Business Administration, Minor in Computer Science}{Drexel University}{Philadelphia, PA}{\textit{3.59 GPA}}{}
+
+\section{Technical Tools}
+\cvlistitem{Programming/Scripting Languages: Java/Groovy, Python, C/C++, BASH, VBA, JavaScript, PowerShell.}
+\cvlistitem{Development Tools: Git, SVN, Vagrant, IntelliJ/Eclipse, iTerm 2.}
+\cvlistitem{Web Servers: Apache HTTP Server, IIS, Apache Tomcat, Oracle Weblogic.}
+\cvlistitem{Operating Systems: RedHat Enterprise Linux, OSX, Windows.}
+\cvlistitem{Databases: Oracle, MySQL.}
+
+\end{document}
+%% end of file 'JohnVanNoteResume.tex'.

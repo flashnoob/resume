@@ -1,6 +1,9 @@
 ## Ignore directory for Debugging
 ignore/
+target/
 *.swp
+.idea
+*.class
 
 # Created by https://www.gitignore.io/api/latex
 
@@ -199,3 +202,5 @@ TSWLatexianTemp*
 
 # KBibTeX
 *~[0-9]*
+
+.DS_Store

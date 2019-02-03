@@ -4,17 +4,33 @@
 # John Van Note
 # 2016-01-09
 ##
-# Makefile for my resume and cover letter latex
+# Resume makefile
 ##
 
-# variables
-me=John_Van_Note
-resume_doc=$(me)_Resume
-letter_doc=$(me)_Cover_Letter
-build=pdflatex
+.SILENT: clean compile run resume view
 
-resume :
-	$(build) $(resume_doc).tex
+resume_name=JohnVanNoteResume
+resume_src=./out/$(resume_name).tex
+resume_target=$(resume_name).pdf
+build_pdf=pdflatex
+mvn=mvn -q
+
+clean :
+	echo "Cleaning up..."
+	$(mvn) clean
+
+compile : clean
+	echo "Compiling from source..."
+	$(mvn) compile
+
+run : compile
+	echo "Building resume..."
+	$(mvn) exec:java -Dexec.mainClass="com.jvn.resume.Main"
+
+resume : run
+	echo "Converting $(resume_src) to a PDF..."
+	$(build_pdf) $(resume_src) > /dev/null
 
 view : resume
-	open $(resume_doc).pdf
+	echo "Opening $(resume_target)..."
+	open $(resume_target)
