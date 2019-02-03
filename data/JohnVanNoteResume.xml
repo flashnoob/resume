@@ -39,22 +39,21 @@
         </address>
         <technologyUsed>
           <technologyUsed>Java</technologyUsed>
-          <technologyUsed>Apache Tomcat 1.7</technologyUsed>
-          <technologyUsed>Oracle Database 11g</technologyUsed>
+          <technologyUsed>Apache Tomcat</technologyUsed>
+          <technologyUsed>Oracle Database</technologyUsed>
           <technologyUsed>Active Directory/LDAP</technologyUsed>
-          <technologyUsed>SAP</technologyUsed>
           <technologyUsed>Vagrant</technologyUsed>
-          <technologyUsed>MySQL</technologyUsed>
-          <technologyUsed>GitLab</technologyUsed>
-          <technologyUsed>BitBucket</technologyUsed>
+          <technologyUsed>MySQL Database</technologyUsed>
+          <technologyUsed>Git</technologyUsed>
+          <technologyUsed>SVN</technologyUsed>
         </technologyUsed>
         <highlights>
           <highlights>Installed and implemented SailPoint’s IdentityIQ and IdentityNow on client sites with custom integrations and configuration management.</highlights>
           <highlights>Developed a custom integration between IdentityIQ and an external ticketing service to perform user actions (account creation, account removal, access requests) for external systems.</highlights>
-          <highlights>Developed a custom solutions for application management, service account governance, and account provisioning in the IdentityIQ system.</highlights>
+          <highlights>Designed a custom solution for application management, service account governance, and account provisioning in the IdentityIQ system.</highlights>
           <highlights>Helped drive an effort for improving code testability, specifically using unit tests with the TestNG and EasyMock frameworks.</highlights>
           <highlights>Contributed as a member of multiple internal development teams to write maintainable, modular code that could be leverage across projects</highlights>
-          <highlights>Acted as mentor for multiple new hires and interns.</highlights>
+          <highlights>Developed and lead program to train new developers.</highlights>
         </highlights>
       </experiences>
       <experiences>
@@ -82,10 +81,10 @@
           <technologyUsed>Python</technologyUsed>
           <technologyUsed>BASH</technologyUsed>
           <technologyUsed>Apache HTTP Server</technologyUsed>
-          <technologyUsed>Apache tomcat 1.7</technologyUsed>
-          <technologyUsed>IIS 7/8</technologyUsed>
-          <technologyUsed>Oracle Weblogic 12c</technologyUsed>
-          <technologyUsed>Oracle Database 119</technologyUsed>
+          <technologyUsed>Apache Tomcat</technologyUsed>
+          <technologyUsed>IIS</technologyUsed>
+          <technologyUsed>Oracle Weblogic</technologyUsed>
+          <technologyUsed>Oracle Database</technologyUsed>
           <technologyUsed>GitHub</technologyUsed>
           <technologyUsed>VirtualBox</technologyUsed>
         </technologyUsed>
@@ -123,8 +122,8 @@
           <technologyUsed>Splunk</technologyUsed>
           <technologyUsed>GitHub</technologyUsed>
           <technologyUsed>SVN</technologyUsed>
-          <technologyUsed>Apache Tomcat 1.7</technologyUsed>
-          <technologyUsed>IIS7</technologyUsed>
+          <technologyUsed>Apache Tomcat</technologyUsed>
+          <technologyUsed>IIS</technologyUsed>
           <technologyUsed>Oracle Database</technologyUsed>
         </technologyUsed>
         <highlights>
@@ -204,7 +203,6 @@
           <tools>Python</tools>
           <tools>C/C++</tools>
           <tools>BASH</tools>
-          <tools>VBA</tools>
           <tools>JavaScript</tools>
           <tools>PowerShell</tools>
         </tools>
@@ -216,7 +214,6 @@
           <tools>SVN</tools>
           <tools>Vagrant</tools>
           <tools>IntelliJ/Eclipse</tools>
-          <tools>iTerm 2</tools>
         </tools>
       </tools>
       <tools>

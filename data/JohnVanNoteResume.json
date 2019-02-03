@@ -30,8 +30,8 @@
         },
         "technologyUsed": [
           "Java",
-          "Apache Tomcat 1.7",
-          "Oracle Database 11g",
+          "Apache Tomcat",
+          "Oracle Database",
           "Active Directory/LDAP",
           "SAP",
           "Vagrant",
@@ -42,10 +42,10 @@
         "highlights": [
           "Installed and implemented SailPoint’s IdentityIQ and IdentityNow on client sites with custom integrations and configuration management.",
           "Developed a custom integration between IdentityIQ and an external ticketing service to perform user actions (account creation, account removal, access requests) for external systems.",
-          "Developed a custom solutions for application management, service account governance, and account provisioning in the IdentityIQ system.",
+          "Designed a custom solutions for application management, service account governance, and account provisioning in the IdentityIQ system.",
           "Helped drive an effort for improving code testability, specifically using unit tests with the TestNG and EasyMock frameworks.",
           "Contributed as a member of multiple internal development teams to write maintainable, modular code that could be leveraged across projects.",
-          "Acted as mentor for multiple new hires and interns."
+          "Developed and lead program to train new developers."
         ]
       },
       {
@@ -70,10 +70,10 @@
           "Python",
           "BASH",
           "Apache HTTP Server",
-          "Apache tomcat 1.7",
-          "IIS 7/8",
-          "Oracle Weblogic 12c",
-          "Oracle Database 119",
+          "Apache Tomcat",
+          "IIS",
+          "Oracle Weblogic",
+          "Oracle Database",
           "GitHub",
           "VirtualBox"
         ],
@@ -108,7 +108,7 @@
           "Splunk",
           "GitHub",
           "SVN",
-          "Apache Tomcat 1.7",
+          "Apache Tomcat",
           "IIS7",
           "Oracle Database"
         ],

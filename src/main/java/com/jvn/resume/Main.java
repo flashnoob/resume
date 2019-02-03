@@ -1,8 +1,6 @@
 package com.jvn.resume;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.jvn.resume.LatexResume;
-import com.jvn.resume.Resume;
 import com.jvn.resume.printer.Printer;
 import com.jvn.resume.printer.VelocityPrinter;
 import java.io.File;
