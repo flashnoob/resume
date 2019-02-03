@@ -1,6 +1,6 @@
 language: bash
 sudo: false
-install: travis_wait mvn install
+install: maven2
 script:
   - make run
 branches:
