@@ -1,8 +1,14 @@
 language: bash
+
 sudo: required
-install: travis_wait install maven
+
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install -y maven
+
 script:
   - make run
+
 branches:
   only:
   - travis
