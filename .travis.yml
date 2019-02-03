@@ -1,6 +1,6 @@
 language: bash
-sudo: false
-install: maven2
+sudo: required
+install: maven
 script:
   - make run
 branches:
