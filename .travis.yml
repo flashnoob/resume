@@ -1,3 +1,6 @@
 language: bash
+sudo: false
+install:
+  - mvn
 script:
   - make run
