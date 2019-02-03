@@ -4,10 +4,8 @@ This the source code for my resume in LaTeX and also the functionality to suppor
 
 ## Build Process
 
-In order to build the resume from source, execute the following:
-```
-make resume
-```
+In order to build the resume from source, execute ```make resume``` which will build the resume from source.
+You can open build and open the file via ```make view```. *This only works on Mac OS.
 
 ## Prerequisites
 
