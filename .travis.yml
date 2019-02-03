@@ -1,6 +1,8 @@
 language: bash
 sudo: false
-install:
-  - mvn
+install: travis_wait mvn install
 script:
   - make run
+branches:
+  only:
+  - travis
