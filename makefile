@@ -7,7 +7,7 @@
 # Resume makefile
 ##
 
-.SILENT: clean compile run resume view
+.SILENT: clean compile test run resume view
 
 resume_name=JohnVanNoteResume
 resume_src=./out/$(resume_name).tex
@@ -23,7 +23,11 @@ compile : clean
 	echo "Compiling from source..."
 	$(mvn) compile
 
-run : compile
+test : compile
+	echo "Running automated tests..."
+	$(mvn) test
+
+run : test
 	echo "Building resume..."
 	$(mvn) exec:java -Dexec.mainClass="com.jvn.resume.Main"
 
