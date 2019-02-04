@@ -3,8 +3,8 @@ language: bash
 sudo: required
 
 before_install:
-  - sudo apt-get update
-  - sudo apt-get install -y oracle-java8-installer maven
+  - apt-get update
+  - apt-get install -y oracle-java8-installer maven
 
 script:
   - make run
