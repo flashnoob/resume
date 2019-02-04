@@ -3,8 +3,4 @@ language: java
 sudo: required
 
 script:
-  - make view
-
-branches:
-  only:
-  - travis
+  - make run
