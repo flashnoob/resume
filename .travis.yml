@@ -1,10 +1,6 @@
-language: bash
+language: java
 
 sudo: required
-
-before_install:
-  - apt-get update
-  - apt-get install -y oracle-java8-installer maven
 
 script:
   - make run
