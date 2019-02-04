@@ -3,7 +3,7 @@ language: java
 sudo: required
 
 script:
-  - make run
+  - make view
 
 branches:
   only:
