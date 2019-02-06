@@ -8,4 +8,4 @@ before_install:
   - sudo apt-get install texlive-latex-extra
 
 script:
-  - make run
+  - make resume
