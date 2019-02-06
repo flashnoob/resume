@@ -1,6 +1,4 @@
 language: java
 
-sudo: required
-
 script:
   - make run
