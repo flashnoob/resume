@@ -229,7 +229,7 @@
   },
   "theme": "CLASSIC",
   "fontSize": "TEN",
-  "fontFamily": "MONOSPACED",
+  "fontFamily": "SANS",
   "paperSize": "A4",
   "color": "BLACK"
 }
