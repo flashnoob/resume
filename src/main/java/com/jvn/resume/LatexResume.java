@@ -29,7 +29,8 @@ public class LatexResume extends Resume {
 
   public enum FontFamily {
     SANS("sans"),
-    ROMAN("roman");
+    ROMAN("roman"),
+    MONOSPACED("monospaced");
 
     private @Getter String name;
 
