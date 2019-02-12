@@ -18,7 +18,7 @@ public class Printer_UnitTest {
 
     boolean called = false;
 
-    public void printResume(Resume resume) throws Exception {
+    public void printResume(Resume resume) {
       called = true;
     }
 
