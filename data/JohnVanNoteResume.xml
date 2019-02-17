@@ -1,9 +1,4 @@
-<Resume>
-  <theme>CLASSIC</theme>
-  <fontSize>TEN</fontSize>
-  <fontFamily>SANS</fontFamily>
-  <paperSize>A4</paperSize>
-  <color>BLACK</color>
+<LatexResume>
   <personalSection>
     <firstName>John</firstName>
     <lastName>Van Note</lastName>
@@ -26,6 +21,7 @@
           <startDate>
             <year>2018</year>
             <month>MARCH</month>
+            <readable>Mar. 2018</readable>
           </startDate>
           <endDate/>
         </tenure>
@@ -42,17 +38,18 @@
           <technologyUsed>Apache Tomcat</technologyUsed>
           <technologyUsed>Oracle Database</technologyUsed>
           <technologyUsed>Active Directory/LDAP</technologyUsed>
+          <technologyUsed>SAP</technologyUsed>
           <technologyUsed>Vagrant</technologyUsed>
-          <technologyUsed>MySQL Database</technologyUsed>
-          <technologyUsed>Git</technologyUsed>
-          <technologyUsed>SVN</technologyUsed>
+          <technologyUsed>MySQL</technologyUsed>
+          <technologyUsed>GitLab</technologyUsed>
+          <technologyUsed>BitBucket</technologyUsed>
         </technologyUsed>
         <highlights>
-          <highlights>Installed and implemented SailPoint’s IdentityIQ and IdentityNow on client sites with custom integrations and configuration management.</highlights>
+          <highlights>Implementation of identity and access management software</highlights>
           <highlights>Developed a custom integration between IdentityIQ and an external ticketing service to perform user actions (account creation, account removal, access requests) for external systems.</highlights>
-          <highlights>Designed a custom solution for application management, service account governance, and account provisioning in the IdentityIQ system.</highlights>
+          <highlights>Designed a custom solutions for application management, service account governance, and account provisioning in the IdentityIQ system.</highlights>
           <highlights>Helped drive an effort for improving code testability, specifically using unit tests with the TestNG and EasyMock frameworks.</highlights>
-          <highlights>Contributed as a member of multiple internal development teams to write maintainable, modular code that could be leverage across projects</highlights>
+          <highlights>Contributed as a member of multiple internal development teams to write maintainable, modular code that could be leveraged across projects.</highlights>
           <highlights>Developed and lead program to train new developers.</highlights>
         </highlights>
       </experiences>
@@ -62,10 +59,12 @@
           <startDate>
             <year>2016</year>
             <month>FEBRUARY</month>
+            <readable>Feb. 2016</readable>
           </startDate>
           <endDate>
             <year>2017</year>
             <month>MARCH</month>
+            <readable>Mar. 2017</readable>
           </endDate>
         </tenure>
         <company>Corporation Service Company</company>
@@ -89,9 +88,9 @@
           <technologyUsed>VirtualBox</technologyUsed>
         </technologyUsed>
         <highlights>
-          <highlights>Designed and developed a Groovy-based application, which automated a previously manually-compiled monthly application performance index. This aggregated data from multiple reporting tools leveraging the Splunk SDK for Java and reading from an Oracle 11g database backend.</highlights>
-          <highlights>Engineered and supported the implementation of enterprise ETL and Business Intelligence Reporting tools across four environments, spanning more than fourteen application servers. Participated in planning, configuration, and troubleshooting of all server related issues.</highlights>
-          <highlights>Developed a solution to remediate application latency in an Apache Tomcat application by creating anextensible custom Python library to execute BASH commands on RHEL servers.</highlights>
+          <highlights>Designed and developed a Groovy-based application, which automated a previously manually-compiled monthly application performance index. This aggregated data from multiple reporting tools leveraging the Splunk SDK for Java and reading from an   Oracle 11g database backend. </highlights>
+          <highlights>Engineered and supported the implementation of enterprise ETL and Business Intelligence Reporting tools across four environments, spanning more than fourteen application servers. Participated in planning, configuration, and troubleshooting of all server related issues. </highlights>
+          <highlights>Developed a solution to remediate application latency in an Apache Tomcat application by creating anextensible custom Python library to execute BASH commands on RHEL servers. </highlights>
           <highlights>Authored a variety of BASH scripts to remediate Unix server issues.</highlights>
         </highlights>
       </experiences>
@@ -101,10 +100,12 @@
           <startDate>
             <year>2015</year>
             <month>MARCH</month>
+            <readable>Mar. 2015</readable>
           </startDate>
           <endDate>
             <year>2016</year>
             <month>FEBRUARY</month>
+            <readable>Feb. 2016</readable>
           </endDate>
         </tenure>
         <company>Corporation Service Company</company>
@@ -123,11 +124,11 @@
           <technologyUsed>GitHub</technologyUsed>
           <technologyUsed>SVN</technologyUsed>
           <technologyUsed>Apache Tomcat</technologyUsed>
-          <technologyUsed>IIS</technologyUsed>
+          <technologyUsed>IIS7</technologyUsed>
           <technologyUsed>Oracle Database</technologyUsed>
         </technologyUsed>
         <highlights>
-          <highlights>Automated reporting processes using VBA, which parsed data and generated charts in Microsoft Excel with a single click as opposed to a manual process.</highlights>
+          <highlights>Automated reporting processes using VBA, which parsed data and generated charts in Microsoft Excel with a single click as opposed to a manual process. </highlights>
           <highlights>Maintained a legacy Grails Application, fixing application defects, and extending functionality.</highlights>
           <highlights>First responder and level one support for over 10 applications and their respective servers.</highlights>
         </highlights>
@@ -138,10 +139,12 @@
           <startDate>
             <year>2014</year>
             <month>OCTOBER</month>
+            <readable>Oct. 2014</readable>
           </startDate>
           <endDate>
             <year>2015</year>
             <month>JANUARY</month>
+            <readable>Jan. 2015</readable>
           </endDate>
         </tenure>
         <company>Solve Media, Inc.</company>
@@ -164,12 +167,13 @@
           <technologyUsed>VMWare Fusion</technologyUsed>
         </technologyUsed>
         <highlights>
-          <highlights>Provided technical support to customers integrating open-source CAPTCHA technology in a variety of languages/frameworks including Perl, PHP, Python, Ruby, JSP (Java), and ASP.NET. This includedsupporting web plugins for various open-source content management systems, such as WordPress.</highlights>
-          <highlights>Estimated customer availability across geographic targets using JavaScript and VBA to automate the process, which reduced overall estimation time by over 80% and improved reliability.</highlights>
+          <highlights>Provided technical support to customers integrating open-source CAPTCHA technology in a variety of languages/frameworks including Perl, PHP, Python, Ruby, JSP (Java), and ASP.NET. This included supporting web plugins for various open-source content management systems, such as WordPress.</highlights>
+          <highlights>Estimated customer availability across geographic targets using JavaScript and VBA to automate the process, which reduced overall estimation time by over 80% and improved reliability. </highlights>
           <highlights>Completed code reviews and quality assurance tasks on existing libraries and plug-ins.</highlights>
         </highlights>
       </experiences>
     </experiences>
+    <title>Experience</title>
   </experienceSection>
   <educationSection>
     <schools>
@@ -177,46 +181,54 @@
         <degree>Bachelor of Science in Business Administration, Minor in Computer Science</degree>
         <name>Drexel University</name>
         <address>
+          <street/>
+          <additionalStreet/>
           <city>Philadelphia</city>
           <state>PA</state>
+          <zip/>
         </address>
         <gpa>3.59</gpa>
         <tenure>
           <startDate>
             <year>2008</year>
             <month>SEPTEMBER</month>
+            <readable>Sep. 2008</readable>
           </startDate>
           <endDate>
             <year>2013</year>
             <month>JUNE</month>
+            <readable>Jun. 2013</readable>
           </endDate>
         </tenure>
       </schools>
     </schools>
+    <title>Education</title>
   </educationSection>
   <technicalSection>
     <toolSet>
-      <tools>
+      <toolSet>
         <label>Programming/Scripting Languages</label>
         <tools>
           <tools>Java/Groovy</tools>
           <tools>Python</tools>
           <tools>C/C++</tools>
           <tools>BASH</tools>
+          <tools>VBA</tools>
           <tools>JavaScript</tools>
           <tools>PowerShell</tools>
         </tools>
-      </tools>
-      <tools>
+      </toolSet>
+      <toolSet>
         <label>Development Tools</label>
         <tools>
           <tools>Git</tools>
           <tools>SVN</tools>
           <tools>Vagrant</tools>
           <tools>IntelliJ/Eclipse</tools>
+          <tools>iTerm 2</tools>
         </tools>
-      </tools>
-      <tools>
+      </toolSet>
+      <toolSet>
         <label>Web Servers</label>
         <tools>
           <tools>Apache HTTP Server</tools>
@@ -224,22 +236,28 @@
           <tools>Apache Tomcat</tools>
           <tools>Oracle Weblogic</tools>
         </tools>
-      </tools>
-      <tools>
+      </toolSet>
+      <toolSet>
         <label>Operating Systems</label>
         <tools>
           <tools>RedHat Enterprise Linux</tools>
           <tools>OSX</tools>
           <tools>Windows</tools>
         </tools>
-      </tools>
-      <tools>
+      </toolSet>
+      <toolSet>
         <label>Databases</label>
         <tools>
           <tools>Oracle</tools>
           <tools>MySQL</tools>
         </tools>
-      </tools>
+      </toolSet>
     </toolSet>
+    <title>Technical Tools</title>
   </technicalSection>
-</Resume>
+  <theme>CLASSIC</theme>
+  <fontSize>TEN</fontSize>
+  <fontFamily>SANS</fontFamily>
+  <paperSize>A4</paperSize>
+  <color>BLACK</color>
+</LatexResume>
