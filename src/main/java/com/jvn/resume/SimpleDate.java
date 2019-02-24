@@ -1,5 +1,6 @@
 package com.jvn.resume;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.time.Month;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,12 +11,13 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 @Getter
 @Setter
 @NoArgsConstructor
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class SimpleDate {
 
   private Integer year;
   private Month month;
 
-  public String getReadable() {
+  public String readable() {
     return String.format("%s. %d", StringUtils.left(StringUtils.capitalize(StringUtils.lowerCase(month.toString())), 3), year);
   }
 

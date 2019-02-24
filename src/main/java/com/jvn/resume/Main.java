@@ -1,34 +1,46 @@
 package com.jvn.resume;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.SerializationFeature;
-import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import com.jvn.resume.printer.Printer;
 import com.jvn.resume.printer.VelocityPrinter;
 import java.io.File;
+import java.util.List;
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.FilenameUtils;
 
 public class Main {
 
-  private static final String DATA_DIRECTORY = "data";
-  private static final String FS = File.separator;
-  private static final String JSON_RESUME_FILE = "JohnVanNoteResume.json";
-  private static final String XML_RESUME_FILE = "JohnVanNoteResume.xml";
+  private static final String PROP_PATH = "resume.properties";
+  private static final String DATA_DIR = "data";
+  private static final String OUTPUT_DIR = "out";
+  private static final String TEMPLATES_DIR = "templates";
 
   public static void main(String[] args) throws Exception {
 
-    File resumeJson = new File(DATA_DIRECTORY + FS + JSON_RESUME_FILE);
-    ObjectMapper mapper = new ObjectMapper();
-    Resume resume = mapper.readValue(FileUtils.readFileToString(resumeJson), LatexResume.class);
+    ResumeProperties properties = new ResumeProperties(PROP_PATH);
+    String resumeFileName = properties.getFileName();
+    String resumeFileType = properties.getFileType();
+    String templateFileName = properties.getTemplateFileName();
+    String outputFileName = properties.getOutputFileName();
+    String baseFileName = FilenameUtils.getBaseName(resumeFileName);
 
-    ObjectMapper xmlMapper = new XmlMapper();
-    xmlMapper.enable(SerializationFeature.INDENT_OUTPUT);
-    xmlMapper.writeValue(new File(DATA_DIRECTORY + FS + XML_RESUME_FILE), resume);
+    File resumeFile = new File(DATA_DIR, resumeFileName);
+    ObjectMapper mapper = MapperFactory.getMapper(resumeFileType);
+    Resume resume = mapper.readValue(FileUtils.readFileToString(resumeFile), LatexResume.class);
 
-    File template = new File("templates/resume.vm");
-    File out = new File("out/JohnVanNoteResume.tex");
+    File template = new File(TEMPLATES_DIR, templateFileName);
+    File out = new File(OUTPUT_DIR, outputFileName);
     Printer printer = new VelocityPrinter(template, out);
     printer.printResume(resume);
+
+    List<MapperFactory.FileType> otherTypes = MapperFactory.getOtherTypes(resumeFileType);
+    for (MapperFactory.FileType type : otherTypes) {
+      String typeString = type.getType();
+      ObjectMapper otherMapper = MapperFactory.getMapper(typeString);
+      String filename = baseFileName + "." + typeString;
+      otherMapper.writeValue(new File(DATA_DIR, filename), resume);
+    }
+
   }
 
 }

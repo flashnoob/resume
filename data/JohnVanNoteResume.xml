@@ -21,7 +21,6 @@
           <startDate>
             <year>2018</year>
             <month>MARCH</month>
-            <readable>Mar. 2018</readable>
           </startDate>
           <endDate/>
         </tenure>
@@ -45,7 +44,7 @@
           <technologyUsed>BitBucket</technologyUsed>
         </technologyUsed>
         <highlights>
-          <highlights>Implementation of identity and access management software</highlights>
+          <highlights>Installed and implemented SailPoint’s IdentityIQ and IdentityNow on client sites with custom integrations and configuration management.</highlights>
           <highlights>Developed a custom integration between IdentityIQ and an external ticketing service to perform user actions (account creation, account removal, access requests) for external systems.</highlights>
           <highlights>Designed a custom solutions for application management, service account governance, and account provisioning in the IdentityIQ system.</highlights>
           <highlights>Helped drive an effort for improving code testability, specifically using unit tests with the TestNG and EasyMock frameworks.</highlights>
@@ -59,12 +58,10 @@
           <startDate>
             <year>2016</year>
             <month>FEBRUARY</month>
-            <readable>Feb. 2016</readable>
           </startDate>
           <endDate>
             <year>2017</year>
             <month>MARCH</month>
-            <readable>Mar. 2017</readable>
           </endDate>
         </tenure>
         <company>Corporation Service Company</company>
@@ -100,12 +97,10 @@
           <startDate>
             <year>2015</year>
             <month>MARCH</month>
-            <readable>Mar. 2015</readable>
           </startDate>
           <endDate>
             <year>2016</year>
             <month>FEBRUARY</month>
-            <readable>Feb. 2016</readable>
           </endDate>
         </tenure>
         <company>Corporation Service Company</company>
@@ -139,12 +134,10 @@
           <startDate>
             <year>2014</year>
             <month>OCTOBER</month>
-            <readable>Oct. 2014</readable>
           </startDate>
           <endDate>
             <year>2015</year>
             <month>JANUARY</month>
-            <readable>Jan. 2015</readable>
           </endDate>
         </tenure>
         <company>Solve Media, Inc.</company>
@@ -192,12 +185,10 @@
           <startDate>
             <year>2008</year>
             <month>SEPTEMBER</month>
-            <readable>Sep. 2008</readable>
           </startDate>
           <endDate>
             <year>2013</year>
             <month>JUNE</month>
-            <readable>Jun. 2013</readable>
           </endDate>
         </tenure>
       </schools>
