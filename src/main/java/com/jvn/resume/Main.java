@@ -10,14 +10,19 @@ import org.apache.commons.io.FilenameUtils;
 
 public class Main {
 
-  private static final String PROP_PATH = "resume.properties";
+  private static final String DEF_PROP_PATH = "resume.properties";
   private static final String DATA_DIR = "data";
   private static final String OUTPUT_DIR = "out";
   private static final String TEMPLATES_DIR = "templates";
 
   public static void main(String[] args) throws Exception {
 
-    ResumeProperties properties = new ResumeProperties(PROP_PATH);
+    String propertiesFilePath = DEF_PROP_PATH;
+    if (args.length > 0) {
+      propertiesFilePath = args[0];
+    }
+
+    ResumeProperties properties = new ResumeProperties(propertiesFilePath);
     String resumeFileName = properties.getFileName();
     String resumeFileType = properties.getFileType();
     String templateFileName = properties.getTemplateFileName();
