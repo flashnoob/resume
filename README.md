@@ -4,8 +4,25 @@ This the source code for my resume in LaTeX and also the functionality to suppor
 
 ## Build Process
 
-In order to build the resume from source, execute ```make resume``` which will build the resume from source.
-You can open build and open the file via ```make view```. *This only works on Mac OS.
+In order to build the resume from source, execute `make resume` which will build the resume from source.
+You can open build and open the file via `make view`. *This only works on Mac OS.
+
+## Properties
+
+Each build is dependent on a properties file, which should contain the following entries:
+```properties
+filename=MyResume.json #The name of the resume source file, located in the data directory.
+filetype=json #The resume source file type (XML and JSON currently supported).
+outputfilename=MyResume.tex #The output file name, located in the out directory.
+templatefilename=MyResume.vm #The template the resume will be based on, located in the template directory.
+```
+
+The default properties file is `resume.properties` in the root of this project. However another properties file can be passed to the 
+`make run`, `make resume`, or `make view` target using the properties argument, for example:
+
+```commandline
+make view properties=other.resume.properties
+``` 
 
 ## Prerequisites
 
