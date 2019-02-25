@@ -29,7 +29,7 @@ test : compile
 
 run : test
 	echo "Building resume..."
-	$(mvn) exec:java -Dexec.mainClass="com.jvn.resume.Main"
+	$(mvn) exec:java -Dexec.mainClass="com.jvn.resume.Main" -Dexec.args="$(properties)"
 
 resume : run
 	echo "Converting $(resume_src) to a PDF..."
