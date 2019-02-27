@@ -6,7 +6,6 @@ import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 import lombok.Getter;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.builder.ToStringBuilder;
@@ -16,7 +15,8 @@ public class MapperFactory {
   public static ObjectMapper getMapper(String filetype) {
     FileType type = FileType.fromType(filetype);
     if (type == null) {
-      throw new IllegalArgumentException(String.format("File Type %s does not match a supported format: %s.", filetype, Arrays.asList(FileType.values())));
+      String msg = String.format("File Type %s does not match a supported format: %s.", filetype, Arrays.asList(FileType.values()));
+      throw new IllegalArgumentException(msg);
     }
     return getMapper(type);
   }

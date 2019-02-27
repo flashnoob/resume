@@ -15,30 +15,33 @@ public class LatexResume extends Resume {
   private PaperSize paperSize;
   private Color color;
 
+  @Getter
   public enum FontSize {
     TEN("10pt"),
     ELEVEN("11pt"),
     TWELVE("12pt");
 
-    private @Getter String name;
+    private String name;
 
     FontSize(String name) {
       this.name = name;
     }
   }
 
+  @Getter
   public enum FontFamily {
     SANS("sans"),
     ROMAN("roman"),
     MONOSPACED("monospaced");
 
-    private @Getter String name;
+    private String name;
 
     FontFamily(String name) {
       this.name = name;
     }
   }
 
+  @Getter
   public enum PaperSize {
     A4("a4paper"),
     A5("a5paper"),
@@ -47,26 +50,28 @@ public class LatexResume extends Resume {
     LEGAL("legalpaper"),
     LETTER("letterpaper");
 
-    private @Getter String name;
+    private String name;
 
     PaperSize(String name) {
       this.name = name;
     }
   }
 
+  @Getter
   public enum Theme {
     CASUAL("casual"),
     CLASSIC("classic"),
     OLDSTYLE("oldstyle"),
     BANKING("banking");
 
-    private @Getter String name;
+    private String name;
 
     Theme(String name) {
       this.name = name;
     }
   }
 
+  @Getter
   public enum Color {
     BLUE("blue"),
     ORANGE("orange"),
@@ -76,7 +81,7 @@ public class LatexResume extends Resume {
     GREY("grey"),
     BLACK("black");
 
-    private @Getter String name;
+    private String name;
 
     Color(String name) {
       this.name = name;

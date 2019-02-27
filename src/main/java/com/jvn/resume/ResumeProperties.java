@@ -16,13 +16,13 @@ public class ResumeProperties {
   public static final String PROP_OUTPUT_FILE_NAME = "outputfilename";
   public static final String PROP_TEMPLATE_FILE_NAME = "templatefilename";
 
-  public ResumeProperties(String filePath) throws IOException{
+  public ResumeProperties(String filePath) throws IOException {
     this(new File(filePath));
   }
 
   public ResumeProperties(File file) throws IOException {
     properties = new Properties();
-    try(FileInputStream propInput = new FileInputStream(file)) {
+    try (FileInputStream propInput = new FileInputStream(file)) {
       properties.load(propInput);
     }
   }

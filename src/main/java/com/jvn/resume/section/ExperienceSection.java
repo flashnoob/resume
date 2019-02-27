@@ -5,7 +5,6 @@ import java.util.List;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.apache.commons.lang3.builder.ToStringBuilder;
 
 @Getter
 @Setter
@@ -13,13 +12,10 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 public class ExperienceSection extends AbstractTitledSection {
 
   private List<Experience> experiences;
+  public static final String TITLE = "Experience";
 
   public String getTitle() {
-    return "Experience";
+    return TITLE;
   }
 
-  @Override
-  public String toString() {
-    return ToStringBuilder.reflectionToString(this);
-  }
 }

@@ -12,10 +12,11 @@ import lombok.Setter;
 public class EducationSection extends AbstractTitledSection {
 
   private List<Education> schools;
+  public static final String TITLE = "Education";
 
   @Override
   public String getTitle() {
-    return "Education";
+    return TITLE;
   }
 
 }

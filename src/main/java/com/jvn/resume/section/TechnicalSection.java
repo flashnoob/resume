@@ -12,9 +12,11 @@ import lombok.Setter;
 public class TechnicalSection extends AbstractTitledSection {
 
   private List<ToolSet> toolSet;
+  public static final String TITLE = "Technical Tools";
 
   @Override
   public String getTitle() {
-    return "Technical Tools";
+    return TITLE;
   }
+
 }

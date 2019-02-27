@@ -10,7 +10,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @AllArgsConstructor
-public class SimplePrinter implements Printer {
+public class SimplePrinter extends AbstractPrinter {
 
   protected Appendable out;
 
