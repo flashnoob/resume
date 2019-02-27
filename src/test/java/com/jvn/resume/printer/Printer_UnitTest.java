@@ -20,7 +20,7 @@ public class Printer_UnitTest {
     printer.printResume(new Resume());
   }
 
-  private class PrinterImplementation implements Printer {
+  private static class PrinterImplementation implements Printer {
 
     boolean called = false;
 
