@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.security.InvalidParameterException;
 import java.util.Properties;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.builder.ToStringBuilder;
 
 public class ResumeProperties {
 
@@ -51,4 +52,8 @@ public class ResumeProperties {
     return value;
   }
 
+  @Override
+  public String toString() {
+    return ToStringBuilder.reflectionToString(this);
+  }
 }

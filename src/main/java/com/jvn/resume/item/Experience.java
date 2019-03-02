@@ -1,15 +1,15 @@
-package com.jvn.resume;
+package com.jvn.resume.item;
 
+import com.jvn.resume.date.DateRange;
 import java.util.List;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.apache.commons.lang3.builder.ToStringBuilder;
 
 @Getter
 @Setter
 @NoArgsConstructor
-public class Experience {
+public class Experience extends AbstractItem {
 
   private String title;
   private DateRange tenure;
@@ -17,10 +17,5 @@ public class Experience {
   private Address address;
   private List<String> technologyUsed;
   private List<String> highlights;
-
-  @Override
-  public String toString() {
-    return ToStringBuilder.reflectionToString(this);
-  }
 
 }

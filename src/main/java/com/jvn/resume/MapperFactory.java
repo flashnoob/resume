@@ -12,6 +12,9 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 
 public class MapperFactory {
 
+  private MapperFactory() {
+  }
+
   public static ObjectMapper getMapper(String filetype) {
     FileType type = FileType.fromType(filetype);
     if (type == null) {

@@ -1,7 +1,7 @@
 package com.jvn.resume.printer;
 
 import com.google.common.collect.ImmutableList;
-import com.jvn.resume.Education;
+import com.jvn.resume.item.Education;
 import com.jvn.resume.Resume;
 import com.jvn.resume.section.EducationSection;
 import java.io.ByteArrayOutputStream;
