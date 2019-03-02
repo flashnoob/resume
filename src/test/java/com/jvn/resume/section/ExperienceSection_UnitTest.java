@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 public class ExperienceSection_UnitTest {
 
   @Test
-  public void getTitle_NoState_IsExperience() {
+  public void getTitle_AnyState_IsExperience() {
     ExperienceSection section = new ExperienceSection();
     Assert.assertEquals(section.getTitle(), "Experience");
   }
