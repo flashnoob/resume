@@ -1,13 +1,17 @@
 package com.jvn.resume.date;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
+@AllArgsConstructor
+@Builder
 @Getter
-@Setter
 @NoArgsConstructor
+@Setter
 public class DateRange {
 
   private SimpleDate startDate;
