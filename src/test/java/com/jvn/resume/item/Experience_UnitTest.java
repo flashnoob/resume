@@ -4,7 +4,6 @@ import com.google.common.collect.ImmutableList;
 import com.jvn.resume.date.DateRange;
 import com.jvn.resume.date.SimpleDate;
 import java.time.Month;
-import lombok.NonNull;
 import org.testng.annotations.Test;
 import test.util.ToStringUtil;
 
@@ -34,7 +33,6 @@ public class Experience_UnitTest {
         "Street",
         "President", "Google", "H1", "H2", "T1"
     );
-
   }
 
 }

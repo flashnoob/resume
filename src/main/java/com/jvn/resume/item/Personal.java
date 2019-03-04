@@ -3,7 +3,6 @@ package com.jvn.resume.item;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.apache.commons.lang3.builder.ToStringBuilder;
 
 @Getter
 @Setter

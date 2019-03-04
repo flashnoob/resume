@@ -3,6 +3,7 @@ package com.jvn.resume.date;
 import java.time.Month;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import test.util.ToStringUtil;
 
 public class SimpleData_UnitTest {
 
@@ -20,10 +21,8 @@ public class SimpleData_UnitTest {
 
   @Test
   public void toString_AnyState_PrintsFields() {
-    String actualToString = DATE.toString();
-
-    Assert.assertTrue(actualToString.contains("AUGUST"));
-    Assert.assertTrue(actualToString.contains("1980"));
+    ToStringUtil.assertToStringContains(DATE.toString(),
+    "AUGUST","1980");
   }
 
 }

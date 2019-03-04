@@ -56,4 +56,5 @@ public class ResumeProperties {
   public String toString() {
     return ToStringBuilder.reflectionToString(this);
   }
+
 }

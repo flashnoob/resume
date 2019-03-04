@@ -1,8 +1,7 @@
 package com.jvn.resume.item;
 
-import com.fasterxml.jackson.annotation.JsonTypeInfo.As;
-import org.testng.Assert;
 import org.testng.annotations.Test;
+import test.util.ToStringUtil;
 
 public class Address_UnitTest {
 
@@ -15,12 +14,8 @@ public class Address_UnitTest {
     address.setState("Yellow State");
     address.setZip("98765");
 
-    String actualToString = address.toString();
-    Assert.assertTrue(actualToString.contains("123 Blue Street"));
-    Assert.assertTrue(actualToString.contains("Apt. 456"));
-    Assert.assertTrue(actualToString.contains("Red City"));
-    Assert.assertTrue(actualToString.contains("Yellow State"));
-    Assert.assertTrue(actualToString.contains("98765"));
+    ToStringUtil.assertToStringContains(address.toString(),
+    "123 Blue Street", "Apt. 456", "Red City", "Yellow State", "98765");
   }
 
 }

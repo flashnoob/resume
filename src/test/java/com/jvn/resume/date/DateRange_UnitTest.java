@@ -1,8 +1,8 @@
 package com.jvn.resume.date;
 
 import java.time.Month;
-import org.testng.Assert;
 import org.testng.annotations.Test;
+import test.util.ToStringUtil;
 
 public class DateRange_UnitTest {
 
@@ -20,12 +20,8 @@ public class DateRange_UnitTest {
     range.setStartDate(startDate);
     range.setEndDate(endDate);
 
-    String actualToString = range.toString();
-
-    Assert.assertTrue(actualToString.contains("APRIL"));
-    Assert.assertTrue(actualToString.contains("1990"));
-    Assert.assertTrue(actualToString.contains("MARCH"));
-    Assert.assertTrue(actualToString.contains("2019"));
+    ToStringUtil.assertToStringContains(range.toString(),
+        "APRIL", "1990", "MARCH", "2019");
   }
 
 }
