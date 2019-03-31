@@ -1,0 +1,7 @@
+<suite name="AllTestingSuite">
+  <test name="all-tests">
+    <packages>
+      <package name="com.jvn.*"/>
+    </packages>
+  </test>
+</suite>

@@ -18,9 +18,4 @@ public class PersonalSection extends AbstractSection {
   private String email;
   private String website;
 
-  @Override
-  public String toString() {
-    return ToStringBuilder.reflectionToString(this);
-  }
-
 }

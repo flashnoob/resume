@@ -1,4 +1,4 @@
-package test.util;
+package com.jvn.test.util;
 
 import org.testng.Assert;
 

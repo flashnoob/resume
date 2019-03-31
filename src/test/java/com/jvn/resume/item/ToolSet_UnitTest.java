@@ -2,7 +2,7 @@ package com.jvn.resume.item;
 
 import com.google.common.collect.ImmutableList;
 import org.testng.annotations.Test;
-import test.util.ToStringUtil;
+import com.jvn.test.util.ToStringUtil;
 
 public class ToolSet_UnitTest {
 

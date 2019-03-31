@@ -3,7 +3,7 @@ package com.jvn.resume.date;
 import java.time.Month;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import test.util.ToStringUtil;
+import com.jvn.test.util.ToStringUtil;
 
 public class SimpleData_UnitTest {
 

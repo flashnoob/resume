@@ -4,7 +4,7 @@ import com.google.common.collect.ImmutableList;
 import com.jvn.resume.item.Education;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import test.util.ToStringUtil;
+import com.jvn.test.util.ToStringUtil;
 
 public class EducationSection_UnitTest {
 
