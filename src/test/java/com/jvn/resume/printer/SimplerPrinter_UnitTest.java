@@ -1,12 +1,13 @@
 package com.jvn.resume.printer;
 
 import com.google.common.collect.ImmutableList;
-import com.jvn.resume.Education;
+import com.jvn.resume.item.Education;
 import com.jvn.resume.Resume;
 import com.jvn.resume.section.EducationSection;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.PrintStream;
+import java.nio.charset.StandardCharsets;
 import org.apache.commons.lang3.StringUtils;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -35,15 +36,16 @@ public class SimplerPrinter_UnitTest {
     ByteArrayOutputStream errContent = new ByteArrayOutputStream();
     final PrintStream outDefault = System.out;
     final PrintStream errDefault = System.err;
+    final String charSet = StandardCharsets.UTF_8.toString();
 
-    System.setOut(new PrintStream(outContent));
-    System.setErr(new PrintStream(errContent));
+    System.setOut(new PrintStream(outContent, false, charSet));
+    System.setErr(new PrintStream(errContent, false, charSet));
 
     printer = new SimplePrinter(System.out);
     printer.printResume(resume);
 
-    String outString = outContent.toString();
-    String errString = errContent.toString();
+    String outString = outContent.toString(charSet);
+    String errString = errContent.toString(charSet);
     Assert.assertTrue(StringUtils.contains(outString, SECTION_TITLE));
     Assert.assertTrue(errString.isEmpty());
 

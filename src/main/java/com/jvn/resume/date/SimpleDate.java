@@ -1,17 +1,21 @@
-package com.jvn.resume;
+package com.jvn.resume.date;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.time.Month;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
+@AllArgsConstructor
+@Builder
 @Getter
-@Setter
-@NoArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
+@NoArgsConstructor
+@Setter
 public class SimpleDate {
 
   private Integer year;

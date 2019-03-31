@@ -9,6 +9,7 @@ import java.io.Writer;
 import java.nio.charset.StandardCharsets;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 import org.apache.commons.io.FilenameUtils;
@@ -21,15 +22,11 @@ import org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader;
 
 @Getter
 @Setter
-public class VelocityPrinter implements Printer {
+@AllArgsConstructor
+public class VelocityPrinter extends AbstractPrinter {
 
   private File template;
   private File out;
-
-  public VelocityPrinter(File template, File out) {
-    this.setTemplate(template);
-    this.setOut(out);
-  }
 
   @Override
   public void printResume(Resume resume) throws IOException {

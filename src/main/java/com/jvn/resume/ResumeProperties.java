@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.security.InvalidParameterException;
 import java.util.Properties;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.builder.ToStringBuilder;
 
 public class ResumeProperties {
 
@@ -16,13 +17,13 @@ public class ResumeProperties {
   public static final String PROP_OUTPUT_FILE_NAME = "outputfilename";
   public static final String PROP_TEMPLATE_FILE_NAME = "templatefilename";
 
-  public ResumeProperties(String filePath) throws IOException{
+  public ResumeProperties(String filePath) throws IOException {
     this(new File(filePath));
   }
 
   public ResumeProperties(File file) throws IOException {
     properties = new Properties();
-    try(FileInputStream propInput = new FileInputStream(file)) {
+    try (FileInputStream propInput = new FileInputStream(file)) {
       properties.load(propInput);
     }
   }
@@ -49,6 +50,11 @@ public class ResumeProperties {
       throw new InvalidParameterException(String.format("Property %s is required and has no value.", key));
     }
     return value;
+  }
+
+  @Override
+  public String toString() {
+    return ToStringBuilder.reflectionToString(this);
   }
 
 }
