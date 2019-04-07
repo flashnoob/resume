@@ -19,7 +19,7 @@
         "title" : "Software Engineer",
         "tenure" : {
           "startDate" : {
-            "year" : 2018,
+            "year" : 2017,
             "month" : "MARCH"
           },
           "endDate" : null
@@ -44,12 +44,10 @@
           "BitBucket"
         ],
         "highlights" : [
-          "Installed and implemented SailPoint’s IdentityIQ and IdentityNow on client sites with custom integrations and configuration management.",
-          "Developed a custom integration between IdentityIQ and an external ticketing service to perform user actions (account creation, account removal, access requests) for external systems.",
-          "Designed a custom solutions for application management, service account governance, and account provisioning in the IdentityIQ system.",
-          "Helped drive an effort for improving code testability, specifically using unit tests with the TestNG and EasyMock frameworks.",
-          "Contributed as a member of multiple internal development teams to write maintainable, modular code that could be leveraged across projects.",
-          "Developed and lead program to train new developers."
+          "Leading development teams that implement third-party Identity and Access Management (IAM) solutions.",
+          "Developing custom integrations using Java that broker connections between desperate systems.",
+          "Implementing code standardization practices including automation, code review, telemetry, and testability.",
+          "Building programs to train new developers quickly and consistently."
         ]
       },
       {
@@ -85,9 +83,9 @@
           "VirtualBox"
         ],
         "highlights" : [
-          "Designed and developed a Groovy-based application, which automated a previously manually-compiled monthly application performance index. This aggregated data from multiple reporting tools leveraging the Splunk SDK for Java and reading from an   Oracle 11g database backend. ",
-          "Engineered and supported the implementation of enterprise ETL and Business Intelligence Reporting tools across four environments, spanning more than fourteen application servers. Participated in planning, configuration, and troubleshooting of all server related issues. ",
-          "Developed a solution to remediate application latency in an Apache Tomcat application by creating anextensible custom Python library to execute BASH commands on RHEL servers. ",
+          "Designed and developed a Groovy-based application, which automated a previously manually-compiled monthly application performance index. The application aggregated data from multiple reporting tools leveraging the Splunk SDK for Java and reading from an Oracle 11g database backend.",
+          "Engineered and supported the implementation of enterprise ETL and Business Intelligence Reporting tools across four environments, spanning more than fourteen application servers. Participated in planning, configuration, and troubleshooting of all server-side issues.",
+          "Developed a solution to remediate application latency in an Apache Tomcat application by creating an extensible custom Python library to execute BASH commands on RHEL servers. ",
           "Authored a variety of BASH scripts to remediate Unix server issues."
         ]
       },
@@ -124,45 +122,8 @@
         ],
         "highlights" : [
           "Automated reporting processes using VBA, which parsed data and generated charts in Microsoft Excel with a single click as opposed to a manual process. ",
-          "Maintained a legacy Grails Application, fixing application defects, and extending functionality.",
-          "First responder and level one support for over 10 applications and their respective servers."
-        ]
-      },
-      {
-        "title" : "Technical Support Engineer",
-        "tenure" : {
-          "startDate" : {
-            "year" : 2014,
-            "month" : "OCTOBER"
-          },
-          "endDate" : {
-            "year" : 2015,
-            "month" : "JANUARY"
-          }
-        },
-        "company" : "Solve Media, Inc.",
-        "address" : {
-          "street" : null,
-          "additionalStreet" : null,
-          "city" : "Philadelphia",
-          "state" : "PA",
-          "zip" : null
-        },
-        "technologyUsed" : [
-          "JavaScript",
-          "VBA",
-          "Perl",
-          "PHP",
-          "Python",
-          "Ruby",
-          "Java",
-          ".NET",
-          "VMWare Fusion"
-        ],
-        "highlights" : [
-          "Provided technical support to customers integrating open-source CAPTCHA technology in a variety of languages/frameworks including Perl, PHP, Python, Ruby, JSP (Java), and ASP.NET. This included supporting web plugins for various open-source content management systems, such as WordPress.",
-          "Estimated customer availability across geographic targets using JavaScript and VBA to automate the process, which reduced overall estimation time by over 80% and improved reliability. ",
-          "Completed code reviews and quality assurance tasks on existing libraries and plug-ins."
+          "Maintained a legacy Grails Application which fixed application defects and extended functionality.",
+          "Served as first responder and level one support for over 10 applications and their respective servers."
         ]
       }
     ],
@@ -248,7 +209,7 @@
   },
   "theme" : "CLASSIC",
   "fontSize" : "TEN",
-  "fontFamily" : "SANS",
+  "fontFamily" : "ROMAN",
   "paperSize" : "A4",
   "color" : "BLACK"
 }

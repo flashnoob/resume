@@ -3,7 +3,7 @@
 %% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
 %%
 %% John Van Note
-%% 2019-03-03
+%% 2019-04-07
 %%
 %% Resume source code
 %%
@@ -14,7 +14,7 @@
 
 
 % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
-\documentclass[10pt,a4paper,sans]{moderncv}
+\documentclass[10pt,a4paper,roman]{moderncv}
 
 % moderncv themes
 % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
@@ -37,7 +37,7 @@
 %\usepackage{CJKutf8}
 
 % adjust the page margins
-\usepackage[scale=.825]{geometry}
+\usepackage[scale=.8]{geometry}
 
 % if you want to change the width of the column with the dates
 %\setlength{\hintscolumnwidth}{3cm}
@@ -58,24 +58,22 @@
 \makecvtitle
 
 \section{Experience}
-\cventry{Mar. 2018 - Current}{Software Engineer}{Sila Solutions Group}{Arlington, VA}{}{
+\cventry{Mar. 2017 - Current}{Software Engineer}{Sila Solutions Group}{Arlington, VA}{}{
   \textit{Technologies used: Java, Apache Tomcat, Oracle Database, Active Directory/LDAP, SAP, Vagrant, MySQL, GitLab, BitBucket.}%
   \begin{itemize}%
-        \item Installed and implemented SailPoint’s IdentityIQ and IdentityNow on client sites with custom integrations and configuration management.
-        \item Developed a custom integration between IdentityIQ and an external ticketing service to perform user actions (account creation, account removal, access requests) for external systems.
-        \item Designed a custom solutions for application management, service account governance, and account provisioning in the IdentityIQ system.
-        \item Helped drive an effort for improving code testability, specifically using unit tests with the TestNG and EasyMock frameworks.
-        \item Contributed as a member of multiple internal development teams to write maintainable, modular code that could be leveraged across projects.
-        \item Developed and lead program to train new developers.
+        \item Leading development teams that implements third-party Identity and Access Management (IAM) solutions.
+        \item Developing custom integrations using Java that broker connections between desperate systems.
+        \item Implementing code standardization practices including automation, code review, telemetry, and testability.
+        \item Building programs to train new developers quickly and consistently.
       \end{itemize}
 }
 
 \cventry{Feb. 2016 - Mar. 2017}{Software Support Engineer}{Corporation Service Company}{Wilmington, DE}{}{
   \textit{Technologies used: Java/Groovy, Python, BASH, Apache HTTP Server, Apache Tomcat, IIS, Oracle Weblogic, Oracle Database, GitHub, VirtualBox.}%
   \begin{itemize}%
-        \item Designed and developed a Groovy-based application, which automated a previously manually-compiled monthly application performance index. This aggregated data from multiple reporting tools leveraging the Splunk SDK for Java and reading from an   Oracle 11g database backend. 
-        \item Engineered and supported the implementation of enterprise ETL and Business Intelligence Reporting tools across four environments, spanning more than fourteen application servers. Participated in planning, configuration, and troubleshooting of all server related issues. 
-        \item Developed a solution to remediate application latency in an Apache Tomcat application by creating anextensible custom Python library to execute BASH commands on RHEL servers. 
+        \item Designed and developed a Groovy-based application, which automated a previously manually-compiled monthly application performance index. The application aggregated data from multiple reporting tools leveraging the Splunk SDK for Java and reading from an Oracle 11g database backend.
+        \item Engineered and supported the implementation of enterprise ETL and Business Intelligence Reporting tools across four environments, spanning more than fourteen application servers. Participated in planning, configuration, and troubleshooting of all server-side issues.
+        \item Developed a solution to remediate application latency in an Apache Tomcat application by creating an extensible custom Python library to execute BASH commands on RHEL servers. 
         \item Authored a variety of BASH scripts to remediate Unix server issues.
       \end{itemize}
 }
@@ -84,17 +82,8 @@
   \textit{Technologies used: Groovy, VBA, BASH, Splunk, GitHub, SVN, Apache Tomcat, IIS7, Oracle Database.}%
   \begin{itemize}%
         \item Automated reporting processes using VBA, which parsed data and generated charts in Microsoft Excel with a single click as opposed to a manual process. 
-        \item Maintained a legacy Grails Application, fixing application defects, and extending functionality.
-        \item First responder and level one support for over 10 applications and their respective servers.
-      \end{itemize}
-}
-
-\cventry{Oct. 2014 - Jan. 2015}{Technical Support Engineer}{Solve Media, Inc.}{Philadelphia, PA}{}{
-  \textit{Technologies used: JavaScript, VBA, Perl, PHP, Python, Ruby, Java, .NET, VMWare Fusion.}%
-  \begin{itemize}%
-        \item Provided technical support to customers integrating open-source CAPTCHA technology in a variety of languages/frameworks including Perl, PHP, Python, Ruby, JSP (Java), and ASP.NET. This included supporting web plugins for various open-source content management systems, such as WordPress.
-        \item Estimated customer availability across geographic targets using JavaScript and VBA to automate the process, which reduced overall estimation time by over 80% and improved reliability. 
-        \item Completed code reviews and quality assurance tasks on existing libraries and plug-ins.
+        \item Maintained a legacy Grails Application which fixed application defects and extended functionality.
+        \item Served as first responder and level one support for over 10 applications and their respective servers.
       \end{itemize}
 }
 
@@ -103,11 +92,11 @@
 \cventry{Sep. 2008 - Jun. 2013}{Bachelor of Science in Business Administration, Minor in Computer Science}{Drexel University}{Philadelphia, PA}{\textit{3.59 GPA}}{}
 
 \section{Technical Tools}
-\cvlistitem{Programming/Scripting Languages: Java/Groovy, Python, C/C++, BASH, VBA, JavaScript, PowerShell.}
-\cvlistitem{Development Tools: Git, SVN, Vagrant, IntelliJ/Eclipse, iTerm 2.}
-\cvlistitem{Web Servers: Apache HTTP Server, IIS, Apache Tomcat, Oracle Weblogic.}
-\cvlistitem{Operating Systems: RedHat Enterprise Linux, OSX, Windows.}
-\cvlistitem{Databases: Oracle, MySQL.}
+\cvlistitem{\textbf{Programming/Scripting Languages}: Java/Groovy, Python, C/C++, BASH, VBA, JavaScript, PowerShell.}
+\cvlistitem{\textbf{Development Tools}: Git, SVN, Vagrant, IntelliJ/Eclipse, iTerm 2.}
+\cvlistitem{\textbf{Web Servers}: Apache HTTP Server, IIS, Apache Tomcat, Oracle Weblogic.}
+\cvlistitem{\textbf{Operating Systems}: RedHat Enterprise Linux, OSX, Windows.}
+\cvlistitem{\textbf{Databases}: Oracle, MySQL.}
 
 \end{document}
 %% end of file 'JohnVanNoteResume.tex'.
