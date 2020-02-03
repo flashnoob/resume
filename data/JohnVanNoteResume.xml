@@ -52,8 +52,8 @@
         <title>Software Support Engineer</title>
         <tenure>
           <startDate>
-            <year>2016</year>
-            <month>FEBRUARY</month>
+            <year>2015</year>
+            <month>MARCH</month>
           </startDate>
           <endDate>
             <year>2017</year>
@@ -83,6 +83,7 @@
         <highlights>
           <highlights>Designed and developed a Groovy application, which automated a previously manually-compiled monthly application performance index. The application aggregated data from multiple reporting tools leveraging the Splunk SDK for Java and reading from an Oracle 11g database backend.</highlights>
           <highlights>Engineered and supported the implementation of enterprise ETL and Business Intelligence Reporting tools across four environments, spanning more than fourteen application servers. Participated in planning, configuration, and troubleshooting of all server-side decisions.</highlights>
+          <highlights>Automated reporting processes using VBA, which parsed data and generated charts in Microsoft Excel with a single click as opposed to a manual process.</highlights>
           <highlights>Developed a solution to remediate application latency in an Apache Tomcat application by creating an extensible custom Python library to execute BASH commands on Linux servers. </highlights>
           <highlights>Authored a variety of BASH scripts to common Linux/Solaris server issues.</highlights>
         </highlights>
