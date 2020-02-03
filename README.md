@@ -62,3 +62,9 @@ LaTeX is a document preparation system that uses plain text and translates into 
 
 To be transparent, the LaTeX modules included in this project are largely ripped (all credit due) from here
 [here](https://www.sharelatex.com/templates/cv-or-resume?&nocdn=true "ShareLaTeX").
+
+
+### Travis CI
+
+Travis CI is a continuous integration service that can be found [here](https://travis-ci.org/ "Travis CI").
+I use Travix CI to automate the testing process and enforce a uniform set of tasks to be executed whenever a new commit is made on the project.

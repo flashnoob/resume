@@ -8,4 +8,4 @@ before_install:
 
 script:
   - make resume
-  - make resume properties=other.resume.properties
+#  - make resume properties=other.resume.properties
