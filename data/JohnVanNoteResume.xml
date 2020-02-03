@@ -24,7 +24,7 @@
           </startDate>
           <endDate/>
         </tenure>
-        <company>Ernst \&amp; Young (acquired from Sila Solutions Group Dec. 2019)</company>
+        <company>Ernst \&amp; Young (acquired from Sila Solutions Group December 2019)</company>
         <address>
           <street/>
           <additionalStreet/>
@@ -76,8 +76,8 @@
           <technologyUsed>Apache Tomcat</technologyUsed>
           <technologyUsed>IIS</technologyUsed>
           <technologyUsed>Oracle WebLogic</technologyUsed>
-          <technologyUsed>Oracle Database</technologyUsed>
-          <technologyUsed>GitHub</technologyUsed>
+          <technologyUsed>SQL</technologyUsed>
+          <technologyUsed>Git</technologyUsed>
           <technologyUsed>VirtualBox</technologyUsed>
         </technologyUsed>
         <highlights>
@@ -164,7 +164,7 @@
     <title>Technical Tools</title>
   </technicalSection>
   <theme>CLASSIC</theme>
-  <fontSize>TEN</fontSize>
+  <fontSize>ELEVEN</fontSize>
   <fontFamily>SANS</fontFamily>
   <paperSize>A4</paperSize>
   <color>BLACK</color>

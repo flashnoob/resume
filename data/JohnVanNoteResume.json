@@ -24,7 +24,7 @@
           },
           "endDate" : null
         },
-        "company" : "Ernst \\& Young (acquired from Sila Solutions Group Dec. 2019)",
+        "company" : "Ernst \\& Young (acquired from Sila Solutions Group December 2019)",
         "address" : {
           "street" : null,
           "additionalStreet" : null,
@@ -42,10 +42,10 @@
           "AWS"
         ],
         "highlights" : [
-          "Lead the design and development of complex integrations with third-party Identity \\& Access Management (IAM) solutions, primarily leveraging Java using TestNG/EasyMock for unit testing, and Vagrant/Docker for integration testing.",
+          "Lead the design and development of complex integrations with third-party Identity \\& Access Management (IAM) solutions, primarily in Java using TestNG/EasyMock for unit testing, and Vagrant/Docker for integration testing.",
           "Designed the high level architecture for a resume parsing application, following an MVC pattern using ReactJS for the front end, Spring Boot for the business logic, ElasticSearch for data storage, and Jenkins for build automation.",
-          "Implemented practice-wide code standardization practices including automation, code review methodology, telemetry, and testability.",
-          "Mentored and trained over twenty junior software developers including experienced hires."
+          "Implemented practice-wide code standardization practices including automation, code review methodology, telemetry, and test procedures.",
+          "Mentored and trained over twenty junior software developers including entry-level and experienced hires."
         ]
       },
       {
@@ -76,13 +76,13 @@
           "Apache Tomcat",
           "IIS",
           "Oracle WebLogic",
-          "Oracle Database",
-          "GitHub",
+          "SQL",
+          "Git",
           "VirtualBox"
         ],
         "highlights" : [
-          "Designed and developed a Groovy-based application, which automated a previously manually-compiled monthly application performance index. The application aggregated data from multiple reporting tools leveraging the Splunk SDK for Java and reading from an Oracle 11g database backend.",
-          "Engineered and supported the implementation of enterprise ETL and Business Intelligence Reporting tools across four environments, spanning more than fourteen application servers. Participated in planning, configuration, and troubleshooting of all server-side issues.",
+          "Designed and developed a Groovy application, which automated a previously manually-compiled monthly application performance index. The application aggregated data from multiple reporting tools leveraging the Splunk SDK for Java and reading from an Oracle 11g database backend.",
+          "Engineered and supported the implementation of enterprise ETL and Business Intelligence Reporting tools across four environments, spanning more than fourteen application servers. Participated in planning, configuration, and troubleshooting of all server-side decisions.",
           "Developed a solution to remediate application latency in an Apache Tomcat application by creating an extensible custom Python library to execute BASH commands on Linux servers. ",
           "Authored a variety of BASH scripts to common Linux/Solaris server issues."
         ]
@@ -140,7 +140,7 @@
           "Jenkins",
           "Maven/Ant",
           "IntelliJ/Eclipse",
-          "iTerm 2"
+          "Docker"
         ]
       },
       {
@@ -164,7 +164,7 @@
     "title" : "Technical Tools"
   },
   "theme" : "CLASSIC",
-  "fontSize" : "TEN",
+  "fontSize" : "ELEVEN",
   "fontFamily" : "SANS",
   "paperSize" : "A4",
   "color" : "BLACK"
