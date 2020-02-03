@@ -3,11 +3,11 @@
     <firstName>John</firstName>
     <lastName>Van Note</lastName>
     <address>
-      <street>6210 Belcrest Road</street>
-      <additionalStreet>Apt. 1438</additionalStreet>
-      <city>Hyattsville</city>
-      <state>MD</state>
-      <zip>20782</zip>
+      <street>800 P St. NW</street>
+      <additionalStreet>Apt.620</additionalStreet>
+      <city>Washington</city>
+      <state>DC</state>
+      <zip>20001</zip>
     </address>
     <phoneNumber>215.518.0823</phoneNumber>
     <email>johnlvannote@protonmail.com</email>
@@ -16,7 +16,7 @@
   <experienceSection>
     <experiences>
       <experiences>
-        <title>Software Engineer</title>
+        <title>Senior Software Engineer, Identity \&amp; Access Management</title>
         <tenure>
           <startDate>
             <year>2017</year>
@@ -24,7 +24,7 @@
           </startDate>
           <endDate/>
         </tenure>
-        <company>Sila Solutions Group</company>
+        <company>Ernst \&amp; Young (acquired from Sila Solutions Group Dec. 2019)</company>
         <address>
           <street/>
           <additionalStreet/>
@@ -35,19 +35,17 @@
         <technologyUsed>
           <technologyUsed>Java</technologyUsed>
           <technologyUsed>Apache Tomcat</technologyUsed>
-          <technologyUsed>Oracle Database</technologyUsed>
-          <technologyUsed>Active Directory/LDAP</technologyUsed>
-          <technologyUsed>SAP</technologyUsed>
+          <technologyUsed>SQL</technologyUsed>
           <technologyUsed>Vagrant</technologyUsed>
-          <technologyUsed>MySQL</technologyUsed>
-          <technologyUsed>GitLab</technologyUsed>
-          <technologyUsed>BitBucket</technologyUsed>
+          <technologyUsed>Git</technologyUsed>
+          <technologyUsed>Jenkins</technologyUsed>
+          <technologyUsed>AWS</technologyUsed>
         </technologyUsed>
         <highlights>
-          <highlights>Leading development teams that implements third-party Identity and Access Management (IAM) solutions.</highlights>
-          <highlights>Developing custom integrations using Java that broker connections between desperate systems.</highlights>
-          <highlights>Implementing code standardization practices including automation, code review, telemetry, and testability.</highlights>
-          <highlights>Building programs to train new developers quickly and consistently.</highlights>
+          <highlights>Lead the design and development of complex integrations with third-party Identity \&amp; Access Management (IAM) solutions, primarily leveraging Java using TestNG/EasyMock for unit testing, and Vagrant/Docker for integration testing.</highlights>
+          <highlights>Designed the high level architecture for a resume parsing application, following an MVC pattern using ReactJS for the front end, Spring Boot for the business logic, ElasticSearch for data storage, and Jenkins for build automation.</highlights>
+          <highlights>Implemented practice-wide code standardization practices including automation, code review methodology, telemetry, and testability.</highlights>
+          <highlights>Mentored and trained over twenty junior software developers including experienced hires.</highlights>
         </highlights>
       </experiences>
       <experiences>
@@ -77,7 +75,7 @@
           <technologyUsed>Apache HTTP Server</technologyUsed>
           <technologyUsed>Apache Tomcat</technologyUsed>
           <technologyUsed>IIS</technologyUsed>
-          <technologyUsed>Oracle Weblogic</technologyUsed>
+          <technologyUsed>Oracle WebLogic</technologyUsed>
           <technologyUsed>Oracle Database</technologyUsed>
           <technologyUsed>GitHub</technologyUsed>
           <technologyUsed>VirtualBox</technologyUsed>
@@ -85,45 +83,8 @@
         <highlights>
           <highlights>Designed and developed a Groovy-based application, which automated a previously manually-compiled monthly application performance index. The application aggregated data from multiple reporting tools leveraging the Splunk SDK for Java and reading from an Oracle 11g database backend.</highlights>
           <highlights>Engineered and supported the implementation of enterprise ETL and Business Intelligence Reporting tools across four environments, spanning more than fourteen application servers. Participated in planning, configuration, and troubleshooting of all server-side issues.</highlights>
-          <highlights>Developed a solution to remediate application latency in an Apache Tomcat application by creating an extensible custom Python library to execute BASH commands on RHEL servers. </highlights>
-          <highlights>Authored a variety of BASH scripts to remediate Unix server issues.</highlights>
-        </highlights>
-      </experiences>
-      <experiences>
-        <title>Technical Application Support Engineer</title>
-        <tenure>
-          <startDate>
-            <year>2015</year>
-            <month>MARCH</month>
-          </startDate>
-          <endDate>
-            <year>2016</year>
-            <month>FEBRUARY</month>
-          </endDate>
-        </tenure>
-        <company>Corporation Service Company</company>
-        <address>
-          <street/>
-          <additionalStreet/>
-          <city>Wilmington</city>
-          <state>DE</state>
-          <zip/>
-        </address>
-        <technologyUsed>
-          <technologyUsed>Groovy</technologyUsed>
-          <technologyUsed>VBA</technologyUsed>
-          <technologyUsed>BASH</technologyUsed>
-          <technologyUsed>Splunk</technologyUsed>
-          <technologyUsed>GitHub</technologyUsed>
-          <technologyUsed>SVN</technologyUsed>
-          <technologyUsed>Apache Tomcat</technologyUsed>
-          <technologyUsed>IIS7</technologyUsed>
-          <technologyUsed>Oracle Database</technologyUsed>
-        </technologyUsed>
-        <highlights>
-          <highlights>Automated reporting processes using VBA, which parsed data and generated charts in Microsoft Excel with a single click as opposed to a manual process. </highlights>
-          <highlights>Maintained a legacy Grails Application which fixed application defects and extended functionality.</highlights>
-          <highlights>Served as first responder and level one support for over 10 applications and their respective servers.</highlights>
+          <highlights>Developed a solution to remediate application latency in an Apache Tomcat application by creating an extensible custom Python library to execute BASH commands on Linux servers. </highlights>
+          <highlights>Authored a variety of BASH scripts to common Linux/Solaris server issues.</highlights>
         </highlights>
       </experiences>
     </experiences>
@@ -161,7 +122,8 @@
       <toolSet>
         <label>Programming/Scripting Languages</label>
         <tools>
-          <tools>Java/Groovy</tools>
+          <tools>Java</tools>
+          <tools>Groovy</tools>
           <tools>Python</tools>
           <tools>C/C++</tools>
           <tools>BASH</tools>
@@ -173,9 +135,10 @@
       <toolSet>
         <label>Development Tools</label>
         <tools>
-          <tools>Git</tools>
-          <tools>SVN</tools>
+          <tools>Git/SVN</tools>
           <tools>Vagrant</tools>
+          <tools>Jenkins</tools>
+          <tools>Maven/Ant</tools>
           <tools>IntelliJ/Eclipse</tools>
           <tools>iTerm 2</tools>
         </tools>
@@ -186,15 +149,7 @@
           <tools>Apache HTTP Server</tools>
           <tools>IIS</tools>
           <tools>Apache Tomcat</tools>
-          <tools>Oracle Weblogic</tools>
-        </tools>
-      </toolSet>
-      <toolSet>
-        <label>Operating Systems</label>
-        <tools>
-          <tools>RedHat Enterprise Linux</tools>
-          <tools>OSX</tools>
-          <tools>Windows</tools>
+          <tools>Oracle WebLogic</tools>
         </tools>
       </toolSet>
       <toolSet>
@@ -202,6 +157,7 @@
         <tools>
           <tools>Oracle</tools>
           <tools>MySQL</tools>
+          <tools>Amazon Aurora</tools>
         </tools>
       </toolSet>
     </toolSet>
@@ -209,7 +165,7 @@
   </technicalSection>
   <theme>CLASSIC</theme>
   <fontSize>TEN</fontSize>
-  <fontFamily>ROMAN</fontFamily>
+  <fontFamily>SANS</fontFamily>
   <paperSize>A4</paperSize>
   <color>BLACK</color>
 </LatexResume>

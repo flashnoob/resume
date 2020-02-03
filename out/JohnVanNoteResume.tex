@@ -3,7 +3,7 @@
 %% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
 %%
 %% John Van Note
-%% 2019-04-07
+%% 2020-02-02
 %%
 %% Resume source code
 %%
@@ -12,9 +12,10 @@
 % conditions of the LaTeX Project Public License version 1.3c,
 % available at http://www.latex-project.org/lppl/.
 
+\nolinebreak
 
 % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
-\documentclass[10pt,a4paper,roman]{moderncv}
+\documentclass[10pt,a4paper,sans]{moderncv}
 
 % moderncv themes
 % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
@@ -48,7 +49,7 @@
 \name{John}{Van Note}
 % optional, remove / comment the line if not wanted
 %\title{Resume title}
-\address{6210 Belcrest Road, Apt. 1438}{Hyattsville, MD}{20782}
+\address{800 P St. NW, Apt.620}{Washington, DC}{20001}
 \phone[mobile]{215.518.0823}
 \email{johnlvannote@protonmail.com}
 \homepage{https://github.com/JohnVanNote}
@@ -58,32 +59,23 @@
 \makecvtitle
 
 \section{Experience}
-\cventry{Mar. 2017 - Current}{Software Engineer}{Sila Solutions Group}{Arlington, VA}{}{
-  \textit{Technologies used: Java, Apache Tomcat, Oracle Database, Active Directory/LDAP, SAP, Vagrant, MySQL, GitLab, BitBucket.}%
+\cventry{Mar. 2017 - Current}{Senior Software Engineer, Identity \& Access Management}{Ernst \& Young (acquired from Sila Solutions Group Dec. 2019)}{Arlington, VA}{}{
+  \textit{Technologies used: Java, Apache Tomcat, SQL, Vagrant, Git, Jenkins, AWS.}%
   \begin{itemize}%
-        \item Leading development teams that implements third-party Identity and Access Management (IAM) solutions.
-        \item Developing custom integrations using Java that broker connections between desperate systems.
-        \item Implementing code standardization practices including automation, code review, telemetry, and testability.
-        \item Building programs to train new developers quickly and consistently.
+        \item Lead the design and development of complex integrations with third-party Identity \& Access Management (IAM) solutions, primarily leveraging Java using TestNG/EasyMock for unit testing, and Vagrant/Docker for integration testing.
+        \item Designed the high level architecture for a resume parsing application, following an MVC pattern using ReactJS for the front end, Spring Boot for the business logic, ElasticSearch for data storage, and Jenkins for build automation.
+        \item Implemented practice-wide code standardization practices including automation, code review methodology, telemetry, and testability.
+        \item Mentored and trained over twenty junior software developers including experienced hires.
       \end{itemize}
 }
 
 \cventry{Feb. 2016 - Mar. 2017}{Software Support Engineer}{Corporation Service Company}{Wilmington, DE}{}{
-  \textit{Technologies used: Java/Groovy, Python, BASH, Apache HTTP Server, Apache Tomcat, IIS, Oracle Weblogic, Oracle Database, GitHub, VirtualBox.}%
+  \textit{Technologies used: Java/Groovy, Python, BASH, Apache HTTP Server, Apache Tomcat, IIS, Oracle WebLogic, Oracle Database, GitHub, VirtualBox.}%
   \begin{itemize}%
         \item Designed and developed a Groovy-based application, which automated a previously manually-compiled monthly application performance index. The application aggregated data from multiple reporting tools leveraging the Splunk SDK for Java and reading from an Oracle 11g database backend.
         \item Engineered and supported the implementation of enterprise ETL and Business Intelligence Reporting tools across four environments, spanning more than fourteen application servers. Participated in planning, configuration, and troubleshooting of all server-side issues.
-        \item Developed a solution to remediate application latency in an Apache Tomcat application by creating an extensible custom Python library to execute BASH commands on RHEL servers. 
-        \item Authored a variety of BASH scripts to remediate Unix server issues.
-      \end{itemize}
-}
-
-\cventry{Mar. 2015 - Feb. 2016}{Technical Application Support Engineer}{Corporation Service Company}{Wilmington, DE}{}{
-  \textit{Technologies used: Groovy, VBA, BASH, Splunk, GitHub, SVN, Apache Tomcat, IIS7, Oracle Database.}%
-  \begin{itemize}%
-        \item Automated reporting processes using VBA, which parsed data and generated charts in Microsoft Excel with a single click as opposed to a manual process. 
-        \item Maintained a legacy Grails Application which fixed application defects and extended functionality.
-        \item Served as first responder and level one support for over 10 applications and their respective servers.
+        \item Developed a solution to remediate application latency in an Apache Tomcat application by creating an extensible custom Python library to execute BASH commands on Linux servers. 
+        \item Authored a variety of BASH scripts to common Linux/Solaris server issues.
       \end{itemize}
 }
 
@@ -92,11 +84,10 @@
 \cventry{Sep. 2008 - Jun. 2013}{Bachelor of Science in Business Administration, Minor in Computer Science}{Drexel University}{Philadelphia, PA}{\textit{3.59 GPA}}{}
 
 \section{Technical Tools}
-\cvlistitem{\textbf{Programming/Scripting Languages}: Java/Groovy, Python, C/C++, BASH, VBA, JavaScript, PowerShell.}
-\cvlistitem{\textbf{Development Tools}: Git, SVN, Vagrant, IntelliJ/Eclipse, iTerm 2.}
-\cvlistitem{\textbf{Web Servers}: Apache HTTP Server, IIS, Apache Tomcat, Oracle Weblogic.}
-\cvlistitem{\textbf{Operating Systems}: RedHat Enterprise Linux, OSX, Windows.}
-\cvlistitem{\textbf{Databases}: Oracle, MySQL.}
+\cvlistitem{\textbf{Programming/Scripting Languages}: Java, Groovy, Python, C/C++, BASH, VBA, JavaScript, PowerShell.}
+\cvlistitem{\textbf{Development Tools}: Git/SVN, Vagrant, Jenkins, Maven/Ant, IntelliJ/Eclipse, iTerm 2.}
+\cvlistitem{\textbf{Web Servers}: Apache HTTP Server, IIS, Apache Tomcat, Oracle WebLogic.}
+\cvlistitem{\textbf{Databases}: Oracle, MySQL, Amazon Aurora.}
 
 \end{document}
 %% end of file 'JohnVanNoteResume.tex'.

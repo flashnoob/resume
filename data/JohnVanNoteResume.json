@@ -3,11 +3,11 @@
     "firstName" : "John",
     "lastName" : "Van Note",
     "address" : {
-      "street" : "6210 Belcrest Road",
-      "additionalStreet" : "Apt. 1438",
-      "city" : "Hyattsville",
-      "state" : "MD",
-      "zip" : "20782"
+      "street" : "800 P St. NW",
+      "additionalStreet": "Apt.620",
+      "city" : "Washington",
+      "state" : "DC",
+      "zip" : "20001"
     },
     "phoneNumber" : "215.518.0823",
     "email" : "johnlvannote@protonmail.com",
@@ -16,7 +16,7 @@
   "experienceSection" : {
     "experiences" : [
       {
-        "title" : "Software Engineer",
+        "title" : "Senior Software Engineer, Identity \\& Access Management",
         "tenure" : {
           "startDate" : {
             "year" : 2017,
@@ -24,7 +24,7 @@
           },
           "endDate" : null
         },
-        "company" : "Sila Solutions Group",
+        "company" : "Ernst \\& Young (acquired from Sila Solutions Group Dec. 2019)",
         "address" : {
           "street" : null,
           "additionalStreet" : null,
@@ -35,19 +35,17 @@
         "technologyUsed" : [
           "Java",
           "Apache Tomcat",
-          "Oracle Database",
-          "Active Directory/LDAP",
-          "SAP",
+          "SQL",
           "Vagrant",
-          "MySQL",
-          "GitLab",
-          "BitBucket"
+          "Git",
+          "Jenkins",
+          "AWS"
         ],
         "highlights" : [
-          "Leading development teams that implement third-party Identity and Access Management (IAM) solutions.",
-          "Developing custom integrations using Java that broker connections between desperate systems.",
-          "Implementing code standardization practices including automation, code review, telemetry, and testability.",
-          "Building programs to train new developers quickly and consistently."
+          "Lead the design and development of complex integrations with third-party Identity \\& Access Management (IAM) solutions, primarily leveraging Java using TestNG/EasyMock for unit testing, and Vagrant/Docker for integration testing.",
+          "Designed the high level architecture for a resume parsing application, following an MVC pattern using ReactJS for the front end, Spring Boot for the business logic, ElasticSearch for data storage, and Jenkins for build automation.",
+          "Implemented practice-wide code standardization practices including automation, code review methodology, telemetry, and testability.",
+          "Mentored and trained over twenty junior software developers including experienced hires."
         ]
       },
       {
@@ -77,7 +75,7 @@
           "Apache HTTP Server",
           "Apache Tomcat",
           "IIS",
-          "Oracle Weblogic",
+          "Oracle WebLogic",
           "Oracle Database",
           "GitHub",
           "VirtualBox"
@@ -85,45 +83,8 @@
         "highlights" : [
           "Designed and developed a Groovy-based application, which automated a previously manually-compiled monthly application performance index. The application aggregated data from multiple reporting tools leveraging the Splunk SDK for Java and reading from an Oracle 11g database backend.",
           "Engineered and supported the implementation of enterprise ETL and Business Intelligence Reporting tools across four environments, spanning more than fourteen application servers. Participated in planning, configuration, and troubleshooting of all server-side issues.",
-          "Developed a solution to remediate application latency in an Apache Tomcat application by creating an extensible custom Python library to execute BASH commands on RHEL servers. ",
-          "Authored a variety of BASH scripts to remediate Unix server issues."
-        ]
-      },
-      {
-        "title" : "Technical Application Support Engineer",
-        "tenure" : {
-          "startDate" : {
-            "year" : 2015,
-            "month" : "MARCH"
-          },
-          "endDate" : {
-            "year" : 2016,
-            "month" : "FEBRUARY"
-          }
-        },
-        "company" : "Corporation Service Company",
-        "address" : {
-          "street" : null,
-          "additionalStreet" : null,
-          "city" : "Wilmington",
-          "state" : "DE",
-          "zip" : null
-        },
-        "technologyUsed" : [
-          "Groovy",
-          "VBA",
-          "BASH",
-          "Splunk",
-          "GitHub",
-          "SVN",
-          "Apache Tomcat",
-          "IIS7",
-          "Oracle Database"
-        ],
-        "highlights" : [
-          "Automated reporting processes using VBA, which parsed data and generated charts in Microsoft Excel with a single click as opposed to a manual process. ",
-          "Maintained a legacy Grails Application which fixed application defects and extended functionality.",
-          "Served as first responder and level one support for over 10 applications and their respective servers."
+          "Developed a solution to remediate application latency in an Apache Tomcat application by creating an extensible custom Python library to execute BASH commands on Linux servers. ",
+          "Authored a variety of BASH scripts to common Linux/Solaris server issues."
         ]
       }
     ],
@@ -161,7 +122,8 @@
       {
         "label" : "Programming/Scripting Languages",
         "tools" : [
-          "Java/Groovy",
+          "Java",
+          "Groovy",
           "Python",
           "C/C++",
           "BASH",
@@ -173,9 +135,10 @@
       {
         "label" : "Development Tools",
         "tools" : [
-          "Git",
-          "SVN",
+          "Git/SVN",
           "Vagrant",
+          "Jenkins",
+          "Maven/Ant",
           "IntelliJ/Eclipse",
           "iTerm 2"
         ]
@@ -186,22 +149,15 @@
           "Apache HTTP Server",
           "IIS",
           "Apache Tomcat",
-          "Oracle Weblogic"
-        ]
-      },
-      {
-        "label" : "Operating Systems",
-        "tools" : [
-          "RedHat Enterprise Linux",
-          "OSX",
-          "Windows"
+          "Oracle WebLogic"
         ]
       },
       {
         "label" : "Databases",
         "tools" : [
           "Oracle",
-          "MySQL"
+          "MySQL",
+          "Amazon Aurora"
         ]
       }
     ],
@@ -209,7 +165,7 @@
   },
   "theme" : "CLASSIC",
   "fontSize" : "TEN",
-  "fontFamily" : "ROMAN",
+  "fontFamily" : "SANS",
   "paperSize" : "A4",
   "color" : "BLACK"
 }
