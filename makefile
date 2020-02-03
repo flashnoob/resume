@@ -33,7 +33,7 @@ run : test
 
 resume : run
 	echo "Converting $(resume_src) to a PDF..."
-	$(build_pdf) $(resume_src) > /dev/null
+	$(build_pdf) $(resume_src)
 
 view : resume
 	echo "Opening $(resume_target)..."
