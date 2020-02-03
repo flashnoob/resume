@@ -42,10 +42,10 @@
           <technologyUsed>AWS</technologyUsed>
         </technologyUsed>
         <highlights>
-          <highlights>Lead the design and development of complex integrations with third-party Identity \&amp; Access Management (IAM) solutions, primarily leveraging Java using TestNG/EasyMock for unit testing, and Vagrant/Docker for integration testing.</highlights>
-          <highlights>Designed the high level architecture for a resume parsing application, following an MVC pattern using ReactJS for the front end, Spring Boot for the business logic, ElasticSearch for data storage, and Jenkins for build automation.</highlights>
-          <highlights>Implemented practice-wide code standardization practices including automation, code review methodology, telemetry, and testability.</highlights>
-          <highlights>Mentored and trained over twenty junior software developers including experienced hires.</highlights>
+          <highlights>Lead the design and development of complex integrations with third-party Identity \&amp; Access Management (IAM) solutions. This was coded primarily in Java using TestNG/EasyMock for unit testing, and Vagrant/Docker for integration testing.</highlights>
+          <highlights>Designed the high-level architecture for a resume parsing application, following a model-view-controller (MVC) design pattern. The application leveraged ReactJS for the front end, Spring Boot for the business logic, ElasticSearch for data storage, and Jenkins for build automation.</highlights>
+          <highlights>Implemented practice-wide code standardization practices including automation, code review methodology, telemetry, and test procedures.</highlights>
+          <highlights>Mentored and trained over twenty junior software developers including entry-level and experienced hires.</highlights>
         </highlights>
       </experiences>
       <experiences>
@@ -81,8 +81,8 @@
           <technologyUsed>VirtualBox</technologyUsed>
         </technologyUsed>
         <highlights>
-          <highlights>Designed and developed a Groovy-based application, which automated a previously manually-compiled monthly application performance index. The application aggregated data from multiple reporting tools leveraging the Splunk SDK for Java and reading from an Oracle 11g database backend.</highlights>
-          <highlights>Engineered and supported the implementation of enterprise ETL and Business Intelligence Reporting tools across four environments, spanning more than fourteen application servers. Participated in planning, configuration, and troubleshooting of all server-side issues.</highlights>
+          <highlights>Designed and developed a Groovy application, which automated a previously manually-compiled monthly application performance index. The application aggregated data from multiple reporting tools leveraging the Splunk SDK for Java and reading from an Oracle 11g database backend.</highlights>
+          <highlights>Engineered and supported the implementation of enterprise ETL and Business Intelligence Reporting tools across four environments, spanning more than fourteen application servers. Participated in planning, configuration, and troubleshooting of all server-side decisions.</highlights>
           <highlights>Developed a solution to remediate application latency in an Apache Tomcat application by creating an extensible custom Python library to execute BASH commands on Linux servers. </highlights>
           <highlights>Authored a variety of BASH scripts to common Linux/Solaris server issues.</highlights>
         </highlights>
@@ -140,7 +140,7 @@
           <tools>Jenkins</tools>
           <tools>Maven/Ant</tools>
           <tools>IntelliJ/Eclipse</tools>
-          <tools>iTerm 2</tools>
+          <tools>Docker</tools>
         </tools>
       </toolSet>
       <toolSet>
