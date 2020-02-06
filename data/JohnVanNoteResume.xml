@@ -42,7 +42,7 @@
           <technologyUsed>AWS</technologyUsed>
         </technologyUsed>
         <highlights>
-          <highlights>Lead the design and development of complex integrations with third-party Identity \&amp; Access Management (IAM) solutions. This was coded primarily in Java using TestNG/EasyMock for unit testing, and Vagrant/Docker for integration testing.</highlights>
+          <highlights>Led the design and development of complex integrations with third-party Identity \&amp; Access Management (IAM) solutions. This was coded primarily in Java using TestNG/EasyMock for unit testing, and Vagrant/Docker for integration testing.</highlights>
           <highlights>Designed the high-level architecture for a resume parsing application, following a model-view-controller (MVC) design pattern. The application leveraged ReactJS for the front end, Spring Boot for the business logic, ElasticSearch for data storage, and Jenkins for build automation.</highlights>
           <highlights>Implemented practice-wide code standardization practices including automation, code review methodology, telemetry, and test procedures.</highlights>
           <highlights>Mentored and trained over twenty junior software developers including entry-level and experienced hires.</highlights>
